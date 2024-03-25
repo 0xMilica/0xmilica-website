@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on 0xMilica Web3 Blog</title>
+    <link>http://localhost:1313/post/</link>
+    <description>Recent content in Posts on 0xMilica Web3 Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 25 Mar 2024 19:41:56 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My First Post</title>
+      <link>http://localhost:1313/post/my-first-post/</link>
+      <pubDate>Mon, 25 Mar 2024 19:41:56 +0100</pubDate>
+      <guid>http://localhost:1313/post/my-first-post/</guid>
+      <description>Some default content</description>
+    </item>
+    <item>
+      <title>A story of why Forestry loves Hugo</title>
+      <link>http://localhost:1313/post/2020-04-27-building-hoppers-media-centre/</link>
+      <pubDate>Mon, 27 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2020-04-27-building-hoppers-media-centre/</guid>
+      <description>To understand why Figma is the best design tool for our company, you have to understand what we do. As a designer, I’ve been crafting digital experiences for the past ten years, having contributed to the growth of companies such as Hopper, Lightspeed, and Breather, among others. Throughout this journey, I’ve had the opportunity to meet the most talented designers, engineers, growth marketers, and build a world-class team to develop startups worldwide.</description>
+    </item>
+    <item>
+      <title>Understanding the Gatsby lifecycle with Narative</title>
+      <link>http://localhost:1313/post/2019-04-31-understanding-the-gatsby-lifecycle/</link>
+      <pubDate>Wed, 01 May 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2019-04-31-understanding-the-gatsby-lifecycle/</guid>
+      <description>Hello, world! This is a demo post for hugo-theme-novela. Novela is built by the team at Narative, and built for everyone that loves the web.&#xA;In my experience, the challenges that growing companies struggle with rarely stem from a lack of good ideas. Good ideas are everywhere. In my experience, the challenges that growing companies struggle with rarely stem from a lack of good ideas. Good ideas are everywhere. In my experience, the challenges that growing companies struggle with rarely stem from a lack of good ideas.</description>
+    </item>
+    <item>
+      <title>Why we built a company before building a product</title>
+      <link>http://localhost:1313/post/2019-04-30-why-we-built-a-company-before-a-product/</link>
+      <pubDate>Tue, 30 Apr 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2019-04-30-why-we-built-a-company-before-a-product/</guid>
+      <description>Hello, world! This is a demo post for hugo-theme-novela. Novela is built by the team at Narative, and built for everyone that loves the web.&#xA;In my experience, the challenges that growing companies struggle with rarely stem from a lack of good ideas. Good ideas are everywhere. In my experience, the challenges that growing companies struggle with rarely stem from a lack of good ideas. Good ideas are everywhere. In my experience, the challenges that growing companies struggle with rarely stem from a lack of good ideas.</description>
+    </item>
+    <item>
+      <title>Building the new Hopper.com</title>
+      <link>http://localhost:1313/post/2019-04-29-building-the-new-hopper-com/</link>
+      <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2019-04-29-building-the-new-hopper-com/</guid>
+      <description>Hello, world! This is a demo post for hugo-theme-novela. Novela is built by the team at Narative, and built for everyone that loves the web.&#xA;At Narative, we’ve been fans of Gatsby from day one, using it to build performant and flexible products for both clients and ourselves. With the growing community interest in Gatsby, we hope to create more resources that make it easier for anyone to grasp the power of this incredible tool.</description>
+    </item>
+    <item>
+      <title>How Figma changed the way we designed Novela</title>
+      <link>http://localhost:1313/post/2019-04-28-how-figma-changed-how-we-design/</link>
+      <pubDate>Sun, 28 Apr 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2019-04-28-how-figma-changed-how-we-design/</guid>
+      <description>To understand why Figma is the best design tool for our company, you have to understand what we do. As a designer, I’ve been crafting digital experiences for the past ten years, having contributed to the growth of companies such as Hopper, Lightspeed, and Breather, among others. Throughout this journey, I’ve had the opportunity to meet the most talented designers, engineers, growth marketers, and build a world-class team to develop startups worldwide.</description>
+    </item>
+    <item>
+      <title>Getting started wtih Novela</title>
+      <link>http://localhost:1313/post/2019-04-27-how-figma-changed-how-we-design/</link>
+      <pubDate>Sat, 27 Apr 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2019-04-27-how-figma-changed-how-we-design/</guid>
+      <description>To understand why Figma is the best design tool for our company, you have to understand what we do. As a designer, I’ve been crafting digital experiences for the past ten years, having contributed to the growth of companies such as Hopper, Lightspeed, and Breather, among others. Throughout this journey, I’ve had the opportunity to meet the most talented designers, engineers, growth marketers, and build a world-class team to develop startups worldwide.</description>
+    </item>
+    <item>
+      <title>Why Narative loves Gatsby&#39;s approach to websites</title>
+      <link>http://localhost:1313/post/2019-04-26-building-hoppers-media-centre/</link>
+      <pubDate>Fri, 26 Apr 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2019-04-26-building-hoppers-media-centre/</guid>
+      <description>To understand why Figma is the best design tool for our company, you have to understand what we do. As a designer, I’ve been crafting digital experiences for the past ten years, having contributed to the growth of companies such as Hopper, Lightspeed, and Breather, among others. Throughout this journey, I’ve had the opportunity to meet the most talented designers, engineers, growth marketers, and build a world-class team to develop startups worldwide.</description>
+    </item>
+    <item>
+      <title>Why we built a company before building a platform</title>
+      <link>http://localhost:1313/post/2018-04-30-why-we-built-a-company-before-a-product/</link>
+      <pubDate>Mon, 30 Apr 2018 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2018-04-30-why-we-built-a-company-before-a-product/</guid>
+      <description>Hello, world! This is a demo post for hugo-theme-novela. Novela is built by the team at Narative, and built for everyone that loves the web.&#xA;In my experience, the challenges that growing companies struggle with rarely stem from a lack of good ideas. Good ideas are everywhere. In my experience, the challenges that growing companies struggle with rarely stem from a lack of good ideas. Good ideas are everywhere. In my experience, the challenges that growing companies struggle with rarely stem from a lack of good ideas.</description>
+    </item>
+    <item>
+      <title>Understanding the Gatsby lifecycle and how it impacts yout developer experience</title>
+      <link>http://localhost:1313/post/2018-04-29-understanding-the-gatsby-lifecycle/</link>
+      <pubDate>Sun, 29 Apr 2018 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2018-04-29-understanding-the-gatsby-lifecycle/</guid>
+      <description>Hello, world! This is a demo post for hugo-theme-novela. Novela is built by the team at Narative, and built for everyone that loves the web.&#xA;At Narative, we’ve been fans of Gatsby from day one, using it to build performant and flexible products for both clients and ourselves. With the growing community interest in Gatsby, we hope to create more resources that make it easier for anyone to grasp the power of this incredible tool.</description>
+    </item>
+    <item>
+      <title>Why Narative loves Gatsby and Figma</title>
+      <link>http://localhost:1313/post/2018-04-28-building-hoppers-media-centre/</link>
+      <pubDate>Sat, 28 Apr 2018 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2018-04-28-building-hoppers-media-centre/</guid>
+      <description>To understand why Figma is the best design tool for our company, you have to understand what we do. As a designer, I’ve been crafting digital experiences for the past ten years, having contributed to the growth of companies such as Hopper, Lightspeed, and Breather, among others. Throughout this journey, I’ve had the opportunity to meet the most talented designers, engineers, growth marketers, and build a world-class team to develop startups worldwide.</description>
+    </item>
+    <item>
+      <title>How Figma changed the way we design at Narative</title>
+      <link>http://localhost:1313/post/2018-04-27-how-figma-changed-how-we-design/</link>
+      <pubDate>Fri, 27 Apr 2018 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2018-04-27-how-figma-changed-how-we-design/</guid>
+      <description>To understand why Figma is the best design tool for our company, you have to understand what we do. As a designer, I’ve been crafting digital experiences for the past ten years, having contributed to the growth of companies such as Hopper, Lightspeed, and Breather, among others. Throughout this journey, I’ve had the opportunity to meet the most talented designers, engineers, growth marketers, and build a world-class team to develop startups worldwide.</description>
+    </item>
+    <item>
+      <title>Why Narative loves Gatsby and Design</title>
+      <link>http://localhost:1313/post/2018-04-26-how-figma-changed-how-we-design/</link>
+      <pubDate>Thu, 26 Apr 2018 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2018-04-26-how-figma-changed-how-we-design/</guid>
+      <description>To understand why Figma is the best design tool for our company, you have to understand what we do. As a designer, I’ve been crafting digital experiences for the past ten years, having contributed to the growth of companies such as Hopper, Lightspeed, and Breather, among others. Throughout this journey, I’ve had the opportunity to meet the most talented designers, engineers, growth marketers, and build a world-class team to develop startups worldwide.</description>
+    </item>
+    <item>
+      <title>How Figma changed the way we design at Narative</title>
+      <link>http://localhost:1313/post/2017-04-30-how-figma-changed-how-we-design/</link>
+      <pubDate>Sun, 30 Apr 2017 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2017-04-30-how-figma-changed-how-we-design/</guid>
+      <description>To understand why Figma is the best design tool for our company, you have to understand what we do. As a designer, I’ve been crafting digital experiences for the past ten years, having contributed to the growth of companies such as Hopper, Lightspeed, and Breather, among others. Throughout this journey, I’ve had the opportunity to meet the most talented designers, engineers, growth marketers, and build a world-class team to develop startups worldwide.</description>
+    </item>
+    <item>
+      <title>Why we built a company before building a product and why it worked</title>
+      <link>http://localhost:1313/post/2017-04-30-why-we-built-a-company-before-a-product/</link>
+      <pubDate>Sun, 30 Apr 2017 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2017-04-30-why-we-built-a-company-before-a-product/</guid>
+      <description>Hello, world! This is a demo post for hugo-theme-novela. Novela is built by the team at Narative, and built for everyone that loves the web.&#xA;In my experience, the challenges that growing companies struggle with rarely stem from a lack of good ideas. Good ideas are everywhere. In my experience, the challenges that growing companies struggle with rarely stem from a lack of good ideas. Good ideas are everywhere. In my experience, the challenges that growing companies struggle with rarely stem from a lack of good ideas.</description>
+    </item>
+    <item>
+      <title>Understanding the Gatsby lifecycle in depth</title>
+      <link>http://localhost:1313/post/2017-04-28-understanding-the-gatsby-lifecycle/</link>
+      <pubDate>Fri, 28 Apr 2017 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2017-04-28-understanding-the-gatsby-lifecycle/</guid>
+      <description>Hello, world! This is a demo post for hugo-theme-novela. Novela is built by the team at Narative, and built for everyone that loves the web.&#xA;At Narative, we’ve been fans of Gatsby from day one, using it to build performant and flexible products for both clients and ourselves. With the growing community interest in Gatsby, we hope to create more resources that make it easier for anyone to grasp the power of this incredible tool.</description>
+    </item>
+    <item>
+      <title>A story of why Forestry loves Hugo</title>
+      <link>http://localhost:1313/post/2018-04-27-building-hoppers-media-centre-secret/</link>
+      <pubDate>Thu, 27 Apr 2017 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2018-04-27-building-hoppers-media-centre-secret/</guid>
+      <description>To understand why Figma is the best design tool for our company, you have to understand what we do. As a designer, I’ve been crafting digital experiences for the past ten years, having contributed to the growth of companies such as Hopper, Lightspeed, and Breather, among others. Throughout this journey, I’ve had the opportunity to meet the most talented designers, engineers, growth marketers, and build a world-class team to develop startups worldwide.</description>
+    </item>
+    <item>
+      <title>Building the new Hopper.com in 2018</title>
+      <link>http://localhost:1313/post/2018-04-31-building-the-new-hopper-com/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2018-04-31-building-the-new-hopper-com/</guid>
+      <description>Hello, world! This is a demo post for hugo-theme-novela. Novela is built by the team at Narative, and built for everyone that loves the web.&#xA;At Narative, we’ve been fans of Gatsby from day one, using it to build performant and flexible products for both clients and ourselves. With the growing community interest in Gatsby, we hope to create more resources that make it easier for anyone to grasp the power of this incredible tool.</description>
+    </item>
+    <item>
+      <title>Why Narative loves Gatsby and Next.js</title>
+      <link>http://localhost:1313/post/2017-04-31-how-figma-changed-how-we-design/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2017-04-31-how-figma-changed-how-we-design/</guid>
+      <description>To understand why Figma is the best design tool for our company, you have to understand what we do. As a designer, I’ve been crafting digital experiences for the past ten years, having contributed to the growth of companies such as Hopper, Lightspeed, and Breather, among others. Throughout this journey, I’ve had the opportunity to meet the most talented designers, engineers, growth marketers, and build a world-class team to develop startups worldwide.</description>
+    </item>
+  </channel>
+</rss>

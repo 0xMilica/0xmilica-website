@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Thiago Costa on 0xMilica Web3 Blog</title>
+    <link>http://localhost:1313/authors/thiago-costa/</link>
+    <description>Recent content in Thiago Costa on 0xMilica Web3 Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 01 May 2019 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/authors/thiago-costa/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Understanding the Gatsby lifecycle with Narative</title>
+      <link>http://localhost:1313/post/2019-04-31-understanding-the-gatsby-lifecycle/</link>
+      <pubDate>Wed, 01 May 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2019-04-31-understanding-the-gatsby-lifecycle/</guid>
+      <description>Hello, world! This is a demo post for hugo-theme-novela. Novela is built by the team at Narative, and built for everyone that loves the web.&#xA;In my experience, the challenges that growing companies struggle with rarely stem from a lack of good ideas. Good ideas are everywhere. In my experience, the challenges that growing companies struggle with rarely stem from a lack of good ideas. Good ideas are everywhere. In my experience, the challenges that growing companies struggle with rarely stem from a lack of good ideas.</description>
+    </item>
+    <item>
+      <title>Why we built a company before building a product</title>
+      <link>http://localhost:1313/post/2019-04-30-why-we-built-a-company-before-a-product/</link>
+      <pubDate>Tue, 30 Apr 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2019-04-30-why-we-built-a-company-before-a-product/</guid>
+      <description>Hello, world! This is a demo post for hugo-theme-novela. Novela is built by the team at Narative, and built for everyone that loves the web.&#xA;In my experience, the challenges that growing companies struggle with rarely stem from a lack of good ideas. Good ideas are everywhere. In my experience, the challenges that growing companies struggle with rarely stem from a lack of good ideas. Good ideas are everywhere. In my experience, the challenges that growing companies struggle with rarely stem from a lack of good ideas.</description>
+    </item>
+    <item>
+      <title>How Figma changed the way we designed Novela</title>
+      <link>http://localhost:1313/post/2019-04-28-how-figma-changed-how-we-design/</link>
+      <pubDate>Sun, 28 Apr 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2019-04-28-how-figma-changed-how-we-design/</guid>
+      <description>To understand why Figma is the best design tool for our company, you have to understand what we do. As a designer, I’ve been crafting digital experiences for the past ten years, having contributed to the growth of companies such as Hopper, Lightspeed, and Breather, among others. Throughout this journey, I’ve had the opportunity to meet the most talented designers, engineers, growth marketers, and build a world-class team to develop startups worldwide.</description>
+    </item>
+    <item>
+      <title>Why we built a company before building a platform</title>
+      <link>http://localhost:1313/post/2018-04-30-why-we-built-a-company-before-a-product/</link>
+      <pubDate>Mon, 30 Apr 2018 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2018-04-30-why-we-built-a-company-before-a-product/</guid>
+      <description>Hello, world! This is a demo post for hugo-theme-novela. Novela is built by the team at Narative, and built for everyone that loves the web.&#xA;In my experience, the challenges that growing companies struggle with rarely stem from a lack of good ideas. Good ideas are everywhere. In my experience, the challenges that growing companies struggle with rarely stem from a lack of good ideas. Good ideas are everywhere. In my experience, the challenges that growing companies struggle with rarely stem from a lack of good ideas.</description>
+    </item>
+    <item>
+      <title>How Figma changed the way we design at Narative</title>
+      <link>http://localhost:1313/post/2018-04-27-how-figma-changed-how-we-design/</link>
+      <pubDate>Fri, 27 Apr 2018 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2018-04-27-how-figma-changed-how-we-design/</guid>
+      <description>To understand why Figma is the best design tool for our company, you have to understand what we do. As a designer, I’ve been crafting digital experiences for the past ten years, having contributed to the growth of companies such as Hopper, Lightspeed, and Breather, among others. Throughout this journey, I’ve had the opportunity to meet the most talented designers, engineers, growth marketers, and build a world-class team to develop startups worldwide.</description>
+    </item>
+    <item>
+      <title>How Figma changed the way we design at Narative</title>
+      <link>http://localhost:1313/post/2017-04-30-how-figma-changed-how-we-design/</link>
+      <pubDate>Sun, 30 Apr 2017 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2017-04-30-how-figma-changed-how-we-design/</guid>
+      <description>To understand why Figma is the best design tool for our company, you have to understand what we do. As a designer, I’ve been crafting digital experiences for the past ten years, having contributed to the growth of companies such as Hopper, Lightspeed, and Breather, among others. Throughout this journey, I’ve had the opportunity to meet the most talented designers, engineers, growth marketers, and build a world-class team to develop startups worldwide.</description>
+    </item>
+    <item>
+      <title>Why we built a company before building a product and why it worked</title>
+      <link>http://localhost:1313/post/2017-04-30-why-we-built-a-company-before-a-product/</link>
+      <pubDate>Sun, 30 Apr 2017 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2017-04-30-why-we-built-a-company-before-a-product/</guid>
+      <description>Hello, world! This is a demo post for hugo-theme-novela. Novela is built by the team at Narative, and built for everyone that loves the web.&#xA;In my experience, the challenges that growing companies struggle with rarely stem from a lack of good ideas. Good ideas are everywhere. In my experience, the challenges that growing companies struggle with rarely stem from a lack of good ideas. Good ideas are everywhere. In my experience, the challenges that growing companies struggle with rarely stem from a lack of good ideas.</description>
+    </item>
+  </channel>
+</rss>
