@@ -1,9 +1,8 @@
 ---
-title: A story of why Forestry loves Hugo
+title: Public Key Infrastructure
 date: 2023-05-31
 hero: "/images/hero-3.jpg"
-excerpt: Creating a new website for Hopper, one of the top 4 most downloaded travel
-  apps in the U.S, along with Uber, Lyft.
+excerpt: Until the 1970s, symmetric encryption was the only type of encryption we know of. Like the lock with...
 timeToRead: 3
 authors:
 - Milica Vulic
