@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Brad Tiller on 0xMilica Web3 Blog</title>
+    <link>http://localhost:1313/authors/brad-tiller/</link>
+    <description>Recent content in Brad Tiller on 0xMilica Web3 Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 01 May 2019 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/authors/brad-tiller/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Understanding the Gatsby lifecycle with Narative</title>
+      <link>http://localhost:1313/post/2019-04-31-understanding-the-gatsby-lifecycle/</link>
+      <pubDate>Wed, 01 May 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2019-04-31-understanding-the-gatsby-lifecycle/</guid>
+      <description>Hello, world! This is a demo post for hugo-theme-novela. Novela is built by the team at Narative, and built for everyone that loves the web.&#xA;In my experience, the challenges that growing companies struggle with rarely stem from a lack of good ideas. Good ideas are everywhere. In my experience, the challenges that growing companies struggle with rarely stem from a lack of good ideas. Good ideas are everywhere. In my experience, the challenges that growing companies struggle with rarely stem from a lack of good ideas.</description>
+    </item>
+  </channel>
+</rss>
