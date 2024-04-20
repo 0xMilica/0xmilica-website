@@ -1,8 +1,7 @@
 ---
-title: Brad Tiller
+title: Milica Vulic
 bio: |
-  Written by You. This is where your author bio lives. Share your work, your
-  joys and of course, your Twitter handle.
+  Blockchain Developer relations engineer with years of hands-on Software Dev experience, now turned to social aspect of web3 product building. Zero-Knowledge proof enthusiast 👀 Social butterfly 🦋
 avatar: /images/brad-tiller.jpg
 social:
   - title: github
