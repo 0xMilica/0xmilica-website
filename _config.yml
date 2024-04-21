@@ -11,3 +11,6 @@ collections:
   uploads:
     title: Uploads
     output: true
+  articles:
+    title: articles
+    output: true
