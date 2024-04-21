@@ -1,4 +1,4 @@
-baseURL: "/http://heyagain.net"
+baseURL: "http://heyagain.net"
 languageCode: "en-us"
 title: "0xMilica Web3 Blog"
 pygmentsstyle: 'monokai'

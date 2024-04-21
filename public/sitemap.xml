@@ -2,16 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>//localhost:1313///http://heyagain.net/</loc>
+    <loc>http://localhost:1313/</loc>
   </url><url>
-    <loc>//localhost:1313///http://heyagain.net/about/</loc>
+    <loc>http://localhost:1313/about/</loc>
   </url><url>
-    <loc>//localhost:1313///http://heyagain.net/authors/</loc>
+    <loc>http://localhost:1313/authors/</loc>
   </url><url>
-    <loc>//localhost:1313///http://heyagain.net/authors/milica-vulic/</loc>
+    <loc>http://localhost:1313/authors/milica-vulic/</loc>
   </url><url>
-    <loc>//localhost:1313///http://heyagain.net/post/</loc>
+    <loc>http://localhost:1313/post/</loc>
   </url><url>
-    <loc>//localhost:1313///http://heyagain.net/post/2020-04-27-public-key-infrastructure/</loc>
+    <loc>http://localhost:1313/post/2020-04-27-public-key-infrastructure/</loc>
   </url>
 </urlset>
