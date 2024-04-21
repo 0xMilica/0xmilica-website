@@ -2,16 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://heyagain.net/</loc>
+    <loc>/http://heyagain.net/</loc>
   </url><url>
-    <loc>http://heyagain.net/about/</loc>
+    <loc>/http://heyagain.net/about/</loc>
   </url><url>
-    <loc>http://heyagain.net/authors/</loc>
+    <loc>/http://heyagain.net/authors/</loc>
   </url><url>
-    <loc>http://heyagain.net/authors/milica-vulic/</loc>
+    <loc>/http://heyagain.net/authors/milica-vulic/</loc>
   </url><url>
-    <loc>http://heyagain.net/post/</loc>
+    <loc>/http://heyagain.net/post/</loc>
   </url><url>
-    <loc>http://heyagain.net/post/2020-04-27-public-key-infrastructure/</loc>
+    <loc>/http://heyagain.net/post/2020-04-27-public-key-infrastructure/</loc>
   </url>
 </urlset>
