@@ -10,17 +10,17 @@
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Public Key Infrastructure</title>
-      <link>http://localhost:1313/post/2020-04-27-public-key-infrastructure-copy/</link>
+      <link>http://localhost:1313/post/2023-05-31-public-key-infrastructure-copy/</link>
       <pubDate>Wed, 31 May 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/2020-04-27-public-key-infrastructure-copy/</guid>
-      <description>Until the 1970s, symmetric encryption was the only type of encryption we know of. Like the lock with multiple keys, when using symmetric encryption, the sender sends a message encrypted with a key, and the receiver must hold the identical key to decrypt a message. In cryptography, we usually introduce Alice and Bob as the sender and the receiver. Alice and Bob must either meet physically or use some of the key exchange algorithms for both of them to have a copy of a secret key.</description>
+      <guid>http://localhost:1313/post/2023-05-31-public-key-infrastructure-copy/</guid>
+      <description>What on Earth could bring such a collaboration? How could one combine the two? Being part of Zuzalu is an exciting and immersive experience in many manners, especially when it comes to widening our views. It was quite an honour to be invited to spend two months with some of the world&amp;rsquo;s most remarkable experts in different fields.&#xA;Every time I looked around, I found experts. ZKs, biology, ageing, longevity, network states, DeSci… you name it.</description>
     </item>
     <item>
-      <title>Public Key Infrastructure</title>
-      <link>http://localhost:1313/post/2020-04-27-public-key-infrastructure/</link>
-      <pubDate>Wed, 31 May 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/2020-04-27-public-key-infrastructure/</guid>
-      <description>Until the 1970s, symmetric encryption was the only type of encryption we know of. Like the lock with multiple keys, when using symmetric encryption, the sender sends a message encrypted with a key, and the receiver must hold the identical key to decrypt a message. In cryptography, we usually introduce Alice and Bob as the sender and the receiver. Alice and Bob must either meet physically or use some of the key exchange algorithms for both of them to have a copy of a secret key.</description>
+      <title>When ZK meets Medicine</title>
+      <link>http://localhost:1313/post/2023-05-18-when-zk-meets-medicine/</link>
+      <pubDate>Thu, 18 May 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2023-05-18-when-zk-meets-medicine/</guid>
+      <description>What on Earth could bring such a collaboration? How could one combine the two?&#xA;Being part of Zuzalu is an exciting and immersive experience in many manners, especially when it comes to widening our views. It was quite an honour to be invited to spend two months with some of the world&amp;rsquo;s most remarkable experts in different fields.&#xA;Every time I looked around, I found experts. ZKs, biology, ageing, longevity, network states, DeSci… you name it.</description>
     </item>
     <item>
       <title>About</title>
