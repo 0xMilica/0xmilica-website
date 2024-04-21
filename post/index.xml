@@ -5,12 +5,11 @@
     <link>http://heyagain.net/post/</link>
     <description>Recent content in Posts on 0xMilica Web3 Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Wed, 31 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://heyagain.net/post/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="http://heyagain.net/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Public Key Infrastructure</title>
       <link>http://heyagain.net/post/2020-04-27-public-key-infrastructure/</link>
-      <pubDate>Wed, 31 May 2023 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://heyagain.net/post/2020-04-27-public-key-infrastructure/</guid>
       <description>Until the 1970s, symmetric encryption was the only type of encryption we know of. Like the lock with multiple keys, when using symmetric encryption, the sender sends a message encrypted with a key, and the receiver must hold the identical key to decrypt a message. In cryptography, we usually introduce Alice and Bob as the sender and the receiver. Alice and Bob must either meet physically or use some of the key exchange algorithms for both of them to have a copy of a secret key.</description>
