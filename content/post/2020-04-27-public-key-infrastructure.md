@@ -1,13 +1,14 @@
 ---
 title: Public Key Infrastructure
-date: 2023-05-31
+date: 2023-05-31 00:00:00 Z
 hero: "/images/hero-3.jpg"
-excerpt: Until the 1970s, symmetric encryption was the only type of encryption we know of. Like the lock with...
+excerpt: Until the 1970s, symmetric encryption was the only type of encryption we
+  know of. Like the lock with...
 timeToRead: 3
 authors:
 - Milica Vulic
-
 ---
+
 Until the 1970s, symmetric encryption was the only type of encryption we know of. Like the lock with multiple keys, when using symmetric encryption, the sender sends a message encrypted with a key, and the receiver must hold the identical key to decrypt a message. In cryptography, we usually introduce Alice and Bob as the sender and the receiver. Alice and Bob must either meet physically or use some of the key exchange algorithms for both of them to have a copy of a secret key. This brings another complication into the equation - numerous keys to be stored, as the sender possesses shared keys with each one of the receivers, and vice versa.
 
 ## Non-secret encryption
