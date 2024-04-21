@@ -2,8 +2,7 @@
 title: When ZK meets Medicine
 date: 2023-05-18
 hero: "/images/when-zk-meets-medicine.png"
-excerpt: Until the 1970s, symmetric encryption was the only type of encryption we
-  know of. Like the lock with...
+excerpt: What on Earth could bring such a collaboration? How could one combine the two? Being part of Zuzalu is an...
 timeToRead: 4
 authors:
 - Milica Vulic

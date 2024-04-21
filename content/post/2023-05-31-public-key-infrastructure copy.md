@@ -2,52 +2,48 @@
 title: Public Key Infrastructure
 date: 2023-05-31
 hero: "/images/public-key-infrastructure.png"
-excerpt: What on Earth could bring such a collaboration? How could one combine the two? Being part of Zuzalu is an...
+excerpt: Until the 1970s, symmetric encryption was the only type of encryption we know of. Like the lock with...
 timeToRead: 3
 authors:
 - Milica Vulic
 ---
 
-## What on Earth could bring such a collaboration? How could one combine the two?
+Until the 1970s, symmetric encryption was the only type of encryption we know of.
 
-Being part of Zuzalu is an exciting and immersive experience in many manners, especially when it comes to widening our views. It was quite an honour to be invited to spend two months with some of the world's most remarkable experts in different fields.
+Like the lock with multiple keys, when using symmetric encryption, the sender sends a message encrypted with a key, and the receiver must hold the identical key to decrypt a message.
 
-Every time I looked around, I found experts. ZKs, biology, ageing, longevity, network states, DeSci… you name it. This was a very fertile ground for making connections between entirely different specialities. It was a fertile ground for - ideas.
+In cryptography, we usually introduce Alice and Bob as the sender and the receiver.
 
-ZKs and medicine are my love, but it was unclear to me how they could be combined.
+Alice and Bob must either meet physically or use some of the key exchange algorithms for both of them to have a copy of a secret key.
 
-But, if I take home something with me from Zuzalu, it is definitely: a different perspective and angle of looking at things 🙂
+This brings another complication into the equation - numerous keys to be stored, as the sender possesses shared keys with each one of the receivers, and vice versa.
 
-As an engineer surrounded by medical doctors in the family, I am always on the lookout for the merging of the two fields. All it took was to listen to one of the talks and say Wow, that's precisely what we need!
+## Non-secret encryption
 
-### Medical research nowadays
+During the 70s, mathematicians and cryptographers worked on the problem of sharing multiple secret keys with numerous parties.
 
-Fear: Naturally, we are all petrified that our most sensitive data, such as health data, would leak into the public or sell to a third party. Such a fact, indeed just human nature, impedes medical research, making medical researchers struggle to find volunteers. Unfortunately, this leads to a lesser pool of participants willing to share their confidential data, which causes less precise research results.
+That was the time when the idea of public key infrastructure was born.
 
-Hindering science: With all of the above, one can conclude it is a process that requires a sizeable amount of funding which not many subjects are eligible to meet. Everything combined signals that there are fewer opportunities created for scientists in the medical field 🙁
+In the essence of it, there was the thought that one key could consist of two distinct keys, one for locking and the other for unlocking the message.
 
-Humanitarian aspect: People in need must wait for a more extended period until research with enough relevant data is conducted.
+This way, the sender should preserve just one key without maintaining a record of others.
 
-Trust issues: Since medical research is quite expensive, it is usually conducted by those legally obliged to prove their products' properties. It is the only way for pharmaceutical companies to get approval to place the medicine they developed on the market. Of course, it goes through many trials before it reaches the counter, but the fact that funding is not decentralised makes people doubt the medicine's properties, which brings us back to the dark middle ages and burning witches.
+### One-way function
 
-Lack of transparency: some of the medical research could be conducted for many years, even decades, and even though the cure for the patients that participated was uncovered, it was kept secret from the patients since they would withdraw from the research (such as in the Tuskegee case).
+Let’s take mixing colours as a practical example of a one-way function. It is easy to create a mixture using two colours, but given the resulting colour, it’s challenging to find the original two colours that contributed to it.
 
-### How could ZK come to aid?
+If we convey a secret message in the form of colour, we could also use colours as encrypting keys. Every colour has its unique complementary colour so that they can be observed as a pair.
 
-That brings us to the question - what kind of data do the medical researchers need? Could they work with such a data set bound to something else rather than a full name or anything that can identify a volunteer, an anonymising data set?
+To establish a secret communication with Bob, Alice sends her inverted colour, e.g. her public colour. In the next step, Bob mixes her public colour with a message colour and sends it to Alice.
 
-This is where ZKs take the spotlight!
+Alice then applies her private colour to that mixture, and having in mind that the complimentary colours cancel each other, she reveals the secret colour Bob sent her.
 
-If the ZK term is brand new for you, I recommend reading [this](https://0xmilica.com/what-is-zero-knowledge-proof), where I made an effort to explain ZKP in layman's terms.
+As finding the originating colours from the mixture is very hard to find, whoever is eavesdropping on this ‘colour’ conversation has little to no option to find out Bob’s secret colour easily. This makes for the rock bed of the public key infrastructure.
 
-The property of ZKs to prove some statement is true without revealing the data behind it (in this case, it is full name and date of birth) in a way that the verifier agrees that the linked proof is valid without seeing the data is a game changer for medical research.
+## Quantum Computing
 
-### Medical research in the future
+Even though it's not the 70s anymore and we're many times more secure cryptographically, there's still a potential threat to current popular implementations of Public key cryptography.
 
-Since patients' or volunteers' data are concealed, more people could feel secure about taking a more active role in medical research, resulting in more precise research outcomes. Due to today's lack of volunteers, it is not that rare they have to be incentivised with significant amounts of money.
+Current implementations base their security on the difficulty of computing discrete logarithms which can be broken with sufficiently large quantum computers and systems that rely on it are also at risk.
 
-If that not be the case, funding from more independent sources could make its way into medical research, opening a door for more scientists to come in and conduct the study.
-
-I see that not only as a science accelerator but also as a world where participants could benefit from the research funding, be it through small equity, insurance, money, priority for medical care or free services - anything that could make them feel valued and respected for doing an excellent service for humanity.
-
-Decentralised funding would naturally lead to more trust, less expensive research to a more affordable and earlier accessible medicine for those in dire need, and indeed - it would lead to a better world 🙂
+SNARKs for example rely heavily on it, while STARKs don't, the latter relies on hashing functions for its implementation. I'll explore this topic in more detail, but for now, no need to worry as the Quantum tech isn't there yet.
