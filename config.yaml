@@ -19,3 +19,21 @@ social:
   youtube: "#"
 taxonomies:
   author: authors
+menu:
+  main:
+    - identifier: "home"
+      name: "Home"
+      url: "/"
+      weight: 1
+    - identifier: "about"
+      name: "About"
+      url: "/about/"
+      weight: 2
+    - identifier: "blog"
+      name: "Blog"
+      url: "/posts/"
+      weight: 3
+    - identifier: "contact"
+      name: "Contact"
+      url: "/contact/"
+      weight: 4

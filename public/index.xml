@@ -6,20 +6,28 @@
     <description>Recent content on 0xMilica Web3 Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Wed, 31 May 2023 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Public Key Infrastructure</title>
+      <link>http://localhost:1313/post/2020-04-27-public-key-infrastructure-copy/</link>
+      <pubDate>Wed, 31 May 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2020-04-27-public-key-infrastructure-copy/</guid>
+      <description>Until the 1970s, symmetric encryption was the only type of encryption we know of. Like the lock with multiple keys, when using symmetric encryption, the sender sends a message encrypted with a key, and the receiver must hold the identical key to decrypt a message. In cryptography, we usually introduce Alice and Bob as the sender and the receiver. Alice and Bob must either meet physically or use some of the key exchange algorithms for both of them to have a copy of a secret key.</description>
+    </item>
+    <item>
+      <title>Public Key Infrastructure</title>
+      <link>http://localhost:1313/post/2020-04-27-public-key-infrastructure/</link>
+      <pubDate>Wed, 31 May 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2020-04-27-public-key-infrastructure/</guid>
+      <description>Until the 1970s, symmetric encryption was the only type of encryption we know of. Like the lock with multiple keys, when using symmetric encryption, the sender sends a message encrypted with a key, and the receiver must hold the identical key to decrypt a message. In cryptography, we usually introduce Alice and Bob as the sender and the receiver. Alice and Bob must either meet physically or use some of the key exchange algorithms for both of them to have a copy of a secret key.</description>
+    </item>
     <item>
       <title>About</title>
       <link>http://localhost:1313/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/about/</guid>
       <description>Blockchain Developer relations engineer with years of hands-on Software Dev experience, now turned to social aspect of web3 product building. Zero-Knowledge proof enthusiast 👀 Social butterfly 🦋</description>
-    </item>
-    <item>
-      <title>Public Key Infrastructure</title>
-      <link>http://localhost:1313/post/2020-04-27-public-key-infrastructure/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/2020-04-27-public-key-infrastructure/</guid>
-      <description>Until the 1970s, symmetric encryption was the only type of encryption we know of. Like the lock with multiple keys, when using symmetric encryption, the sender sends a message encrypted with a key, and the receiver must hold the identical key to decrypt a message. In cryptography, we usually introduce Alice and Bob as the sender and the receiver. Alice and Bob must either meet physically or use some of the key exchange algorithms for both of them to have a copy of a secret key.</description>
     </item>
   </channel>
 </rss>
