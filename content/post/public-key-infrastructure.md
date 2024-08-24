@@ -1,7 +1,7 @@
 ---
 title: Public Key Infrastructure
 date: 2023-05-31
-hero: "/images/public-key-infrastructure.png"
+hero: "/images/public-key-infrastructure.jpg"
 excerpt: Until the 1970s, symmetric encryption was the only type of encryption we know of. Like the lock with...
 timeToRead: 3
 authors:
