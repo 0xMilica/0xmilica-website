@@ -20,6 +20,17 @@ Alice and Bob must either meet physically or use some of the key exchange algori
     </item>
     
     <item>
+      <title>Why do we need Account Abstraction?</title>
+      <link>http://heyagain.net/post/why-do-we-need-account-abstraction/</link>
+      <pubDate>Wed, 24 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://heyagain.net/post/why-do-we-need-account-abstraction/</guid>
+      <description>As time flies, us humans are less satisfied with our inventions than we were when we conceived the idea. We are streaming to making things better with every iteration, and that’s precisely what makes us both imperfect and imperfect beings; at the same time, struggling to find peace within ourselves and feel relieved when we change the world for the better.
+##Before Account Abstraction
+We were not satisfied with smart contracts and EOAs.</description>
+    </item>
+    
+    <item>
       <title>When ZK meets Medicine</title>
       <link>http://heyagain.net/post/when-zk-meets-medicine/</link>
       <pubDate>Thu, 18 May 2023 00:00:00 +0000</pubDate>
