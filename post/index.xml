@@ -61,12 +61,15 @@ This magic is done by allowing the prover to create a mathematical proof that th
     </item>
     
     <item>
-      <title></title>
+      <title>Creating light nodes using substrate-connect</title>
       <link>http://heyagain.net/post/creating-light-nodes-using-substrate-connect/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 15 Dec 2022 00:00:00 +0000</pubDate>
       
       <guid>http://heyagain.net/post/creating-light-nodes-using-substrate-connect/</guid>
-      <description></description>
+      <description>I had the pleasure of joining the discussion about light nodes integrated into wallets hosted by Stefan Sopic from Parity Technologies.
+Many web3 folks are not quite aware that things are pretty centralised in our decentralised world.
+Decentralisation in reality MetaMask, behind the scenes, is using Infura infrastructure.
+Stefan made a solid point that the focal point of all the requests* MetaMask handles is in fact based on the East Coast, USA, through the same blockchain node provider.</description>
     </item>
     
   </channel>
