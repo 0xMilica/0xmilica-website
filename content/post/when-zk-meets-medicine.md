@@ -1,7 +1,7 @@
 ---
 title: When ZK meets Medicine
 date: 2023-05-18
-hero: "/images/when-zk-meets-medicine.png"
+hero: "/images/when-zk-meets-medicine.jpg"
 excerpt: What on Earth could bring such a collaboration? How could one combine the two? Being part of Zuzalu is an...
 timeToRead: 4
 authors:
