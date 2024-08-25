@@ -176,6 +176,7 @@ The following examples are based on Branislav&rsquo;s lecture using the Tenderly
 <h3 id="batching-operations">Batching operations</h3>
 <p>Every transaction has an initial gas fee. If they&rsquo;re called consecutively within the smart contract it&rsquo;s possible to batch them, resolve them as internal calls and have a single initial gas fee.</p>
 <p>However, that might not always be the case. When Ether is forwarded through an internal call (i.e, calling a function from some other smart contract that consumes Ether), there is a penalty in price which can turn batched transactions into more expensive ones compared to the individual ones.</p>
+<p><img src="/images/to-batch-transactions-or-not-to-batch.jpeg" alt="To batch transactions, or not to batch!" title="To batch transactions, or not to batch"></p>
 <p>To batch, or not to batch, that is the question</p>
 <p>To be able to conclude whether or not batching is a favourable operation we have to take into consideration how much gas is saved up on the initial gas fee. With enough transactions batched, a single initial gas fee could be advantageous even for an internal call that consumes Ether.</p>
 <p>Let&rsquo;s take a look at this example in Tenderly <a href="https://sandbox.tenderly.co/branislav/gas-batching">sandbox</a>. It is such a nice place for creating prototypes without doing an actual deployment.</p>
