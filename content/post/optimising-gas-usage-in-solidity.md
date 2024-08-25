@@ -19,6 +19,8 @@ Every transaction has an initial gas fee. If they're called consecutively within
 
 However, that might not always be the case. When Ether is forwarded through an internal call (i.e, calling a function from some other smart contract that consumes Ether), there is a penalty in price which can turn batched transactions into more expensive ones compared to the individual ones.
 
+![To batch transactions, or not to batch!](/images/to-batch-transactions-or-not-to-batch.jpeg "To batch transactions, or not to batch")
+
 To batch, or not to batch, that is the question
 
 To be able to conclude whether or not batching is a favourable operation we have to take into consideration how much gas is saved up on the initial gas fee. With enough transactions batched, a single initial gas fee could be advantageous even for an internal call that consumes Ether.
