@@ -14,6 +14,6 @@ social:
 - title: youtube
   url: https://www.youtube.com/@0xMilica
 - title: telegram
-  url: https://https://t.me/Milica0x
+  url: https://t.me/Milica0x
 ---
 
