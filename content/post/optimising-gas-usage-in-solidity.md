@@ -25,6 +25,7 @@ To be able to conclude whether or not batching is a favourable operation we have
 
 Let's take a look at this example in Tenderly [sandbox](https://sandbox.tenderly.co/branislav/gas-batching). It is such a nice place for creating prototypes without doing an actual deployment.
 
+<iframe src="https://sandbox.tenderly.co/embed/0xMilica/gas-batching?defaultTab=contract&amp;contract=true&amp;script=true&amp;console=true&amp;simulatedTxs=true" width="100%" height="420px" class="css-1ajxxq6 e175mt420"></iframe>
 
 While <contract.sol> represents a smart contract, <script.js> is there to deploy it on the Tenderly fork. In the Simulated transactions card, you can click on 'work1' or 'work 2', open both of these transactions and inspect how much gas each of them consumed. If you check the Gas profiler section, you could find a piece-by-piece breakdown of the method by gas consumption. Great, isn't it?
 
