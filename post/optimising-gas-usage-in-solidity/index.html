@@ -18,23 +18,24 @@
 
 
 
-	
 
 	
 
 
 
 
-<title> | 0xMilica Web3 Blog</title>
-<meta name="description" content="">
-<meta property="og:title" content=" | 0xMilica Web3 Blog">
+<title>Optimising gas usage in Solidity | 0xMilica Web3 Blog</title>
+<meta name="description" content="Lately, it became tricky to find truly efficient solutions for gas optimisation online. What happens is, either they are simply wrong assumptions, or they became obsolete in the meantime, or we need more context to fully understand the proposed solution. But, one thing is for sure - There is always some puzzle missing.
+The following examples are based on Branislav&rsquo;s lecture using the Tenderly gas profiler and simulations which are completely free - make sure to create a profile there and enjoy a tool that gives you incredible insight into gas consumption while supporting a variety of EVM-compatible networks (you can always contact them if there is no network of your preference ATM)">
+<meta property="og:title" content="Optimising gas usage in Solidity | 0xMilica Web3 Blog">
 <meta property="og:site_name" content="0xMilica Web3 Blog">
-<meta property="og:description" content="">
+<meta property="og:description" content="Lately, it became tricky to find truly efficient solutions for gas optimisation online. What happens is, either they are simply wrong assumptions, or they became obsolete in the meantime, or we need more context to fully understand the proposed solution. But, one thing is for sure - There is always some puzzle missing.
+The following examples are based on Branislav&rsquo;s lecture using the Tenderly gas profiler and simulations which are completely free - make sure to create a profile there and enjoy a tool that gives you incredible insight into gas consumption while supporting a variety of EVM-compatible networks (you can always contact them if there is no network of your preference ATM)">
 <meta property="og:url" content="http://heyagain.net/post/optimising-gas-usage-in-solidity/">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content='http://heyagain.net/uploads/default.jpg'><meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content=" | 0xMilica Web3 Blog">
+<meta property="og:image" content='http://heyagain.net/images/substrate-connect.png'><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Optimising gas usage in Solidity | 0xMilica Web3 Blog">
 
 	<link rel="canonical" href="http://heyagain.net/post/optimising-gas-usage-in-solidity/">
 
@@ -42,9 +43,11 @@
 	<meta name="twitter:site" content="@https://twitter.com/forestryio">
 	<meta name="twitter:creator" content="@https://twitter.com/forestryio">
 
-	<meta name="twitter:description" content="">
-<meta name="twitter:image" content="http://heyagain.net/uploads/default.jpg">
-<meta property="article:published_time" content="">
+	<meta name="twitter:description" content="Lately, it became tricky to find truly efficient solutions for gas optimisation online. What happens is, either they are simply wrong assumptions, or they became obsolete in the meantime, or we need more context to fully understand the proposed solution. But, one thing is for sure - There is always some puzzle missing.
+The following examples are based on Branislav&rsquo;s lecture using the Tenderly gas profiler and simulations which are completely free - make sure to create a profile there and enjoy a tool that gives you incredible insight into gas consumption while supporting a variety of EVM-compatible networks (you can always contact them if there is no network of your preference ATM)">
+<meta name="twitter:image" content="http://heyagain.net/images/substrate-connect.png">
+<meta property="article:published_time" content="2023-02-06T00:00:00&#43;00:00">
+	<meta property="article:updated_time" content="2023-02-06T00:00:00&#43;00:00">
 
 
 
@@ -114,68 +117,38 @@
     <section id="articleHero" class="section narrow">
     <div class="article-hero">
         <header class="article-header">
-            <h1 class="article-hero-heading"></h1>
+            <h1 class="article-hero-heading">Optimising gas usage in Solidity</h1>
             <div class="article-hero-subtitle">
                 <div class="article-meta">
                     
 
 
-    <div class="article-coauthors-container">
-        
-        <span id="collapsedCoauthors" class="article-coauthors-collapsed">
-            <div class="article-coauthors-list" style="width: 0px;">
+    
+            <a href="/authors/milica-vulic/" class="article-author-link">
                 
-            </div>
-            <strong class="article-coauthors-name-container">
+                    <div class="article-author-avatar">
+                        <img src="/images/logo.png" />
+                    </div>
                 
-            </strong>
-            <div class="article-coauthors-icon-container">
-                <svg
-width="17"
-height="17"
-viewBox="0 0 17 17"
-fill="none"
-xmlns="http://www.w3.org/2000/svg"
->
-    <path style="fill: var(--primary);"
-      d="M5.3209 8.86719L8.50026 12.0396L11.6796 8.86719L12.6563 9.84385L8.50026 13.9999L4.34424 9.84385L5.3209 8.86719Z"
-    />
-    <path style="fill: var(--primary);"
-      d="M11.6791 8.13281L8.49974 4.96039L5.32039 8.13281L4.34373 7.15615L8.49974 3.00013L12.6558 7.15615L11.6791 8.13281Z"
-    />
-</svg>
-            </div>
-        </span>
-
-        <ul id="uncollapsedCoauthors" class="article-coauthors-list-open hidden">
-            <div id="uncollapsedAction" class="article-icon-open-container">
-                <svg
-width="17"
-height="17"
-viewBox="0 0 17 17"
-fill="none"
-xmlns="http://www.w3.org/2000/svg"
->
-    <path style="fill: var(--primary);"
-      d="M11.6796 14L8.50023 10.8276L5.32088 14L4.34422 13.0233L8.50023 8.86732L12.6563 13.0233L11.6796 14Z"
-    />
-    <path style="fill: var(--primary);"
-      d="M5.32041 3L8.49977 6.17243L11.6791 3L12.6558 3.97666L8.49977 8.13268L4.34375 3.97666L5.32041 3Z"
-    />
-</svg>
-            </div>
-            
-        </ul>
-    </div>
+                
+                <strong>Milica Vulic</strong>
+                
+                <span class="hide-on-mobile">,&nbsp;</span>
+            </a>
+    
 
 
 
 <script src="/js/collapseAuthors.js"></script>
-                    January 1, 0001
-                    • 0 min read
+                    February 6, 2023
+                    • 9 min read
                 </div>
             </div>
         </header>
+        
+        <div class="article-hero-image" style="overflow: hidden; max-height: 500px;" id="ArticleImage__Hero">
+            <img src="/images/substrate-connect.png">
+        </div>
         
     </div>
 </section>
@@ -197,7 +170,106 @@ xmlns="http://www.w3.org/2000/svg"
 
 
     <article  id="articleContent" class="post-content" style="position:relative;">
-        
+        <p>Lately, it became tricky to find truly efficient solutions for gas optimisation online. What happens is, either they are simply wrong assumptions, or they became obsolete in the meantime, or we need more context to fully understand the proposed solution. But, one thing is for sure - There is always some puzzle missing.</p>
+<p>The following examples are based on Branislav&rsquo;s lecture using the Tenderly gas profiler and simulations which are completely free - make sure to create a profile there and enjoy a tool that gives you incredible insight into gas consumption while supporting a variety of EVM-compatible networks (you can always contact them if there is no network of your preference ATM)</p>
+<h2 id="transaction---level">Transaction - Level</h2>
+<h3 id="batching-operations">Batching operations</h3>
+<p>Every transaction has an initial gas fee. If they&rsquo;re called consecutively within the smart contract it&rsquo;s possible to batch them, resolve them as internal calls and have a single initial gas fee.</p>
+<p>However, that might not always be the case. When Ether is forwarded through an internal call (i.e, calling a function from some other smart contract that consumes Ether), there is a penalty in price which can turn batched transactions into more expensive ones compared to the individual ones.</p>
+<p>To batch, or not to batch, that is the question</p>
+<p>To be able to conclude whether or not batching is a favourable operation we have to take into consideration how much gas is saved up on the initial gas fee. With enough transactions batched, a single initial gas fee could be advantageous even for an internal call that consumes Ether.</p>
+<p>Let&rsquo;s take a look at this example in Tenderly sandbox. It is such a nice place for creating prototypes without doing an actual deployment.</p>
+<p>While &lt;contract.sol&gt; represents a smart contract, &lt;script.js&gt; is there to deploy it on the Tenderly fork. In the Simulated transactions card, you can click on &lsquo;work1&rsquo; or &lsquo;work 2&rsquo;, open both of these transactions and inspect how much gas each of them consumed. If you check the Gas profiler section, you could find a piece-by-piece breakdown of the method by gas consumption. Great, isn&rsquo;t it?</p>
+<h3 id="tenderly-fork">Tenderly fork</h3>
+<p>Tenderly fork is not an actual Ethereum fork, but rather an internal Mainnet representation, or a representation of a network of your choice.</p>
+<p><strong>Pros:</strong></p>
+<ul>
+<li>cosy for gas cost profiling compared to the test networks where there is waiting on consensus after deployment</li>
+<li>a sum of 100 Ethers could be assigned out of thin air, which makes it possible to completely manipulate the internal state</li>
+<li>there is a complete EVM implemented in such a way that you won&rsquo;t lack a feeling of working with a true EVM, but still, you won&rsquo;t interact with the blockchain</li>
+<li>user can address all of the &lsquo;IF-THIS-THEN-THAT&rsquo; doubts in a super-efficient manner, error-free, without waiting</li>
+<li>your fork, your state - a fork is created per user</li>
+<li>others can contribute - a fork can be shared among the team</li>
+</ul>
+<p><strong>Cons:</strong></p>
+<p>not an actual network - can&rsquo;t do production on the fork.</p>
+<h3 id="limit-external-calls">Limit external calls</h3>
+<p>Contrary to web2 logic and OOP rules of thumb, it is more gas efficient to work with a monolith smart contract than to operate with several simple modules.</p>
+<ul>
+<li>Modular approach: creating smart contracts like classes in OOP - clean code approach. Usually, you would take references on contracts and call them.</li>
+<li>Monolithic approach: all functions within a single smart contract</li>
+</ul>
+<p>Major culprit? Calling other contracts is pricey - avoiding it can save you some gas.</p>
+<p>Following the example below, you can test and try both monolith and modular approaches. When looking at the modular case, you can notice that there is an internal overhead in gas consumption, even though it is an internal call.</p>
+<p>Saving gas using this technique is possible only if we are the creators of the contract. If someone else owns that contract, then, due to a lack of possibilities, we are compelled to use a modular approach.</p>
+<h2 id="compiler-optimisation">Compiler Optimisation</h2>
+<h3 id="understanding-the-runs-parameter">Understanding the runs parameter</h3>
+<p>When it comes to running functions, there are two options:</p>
+<ul>
+<li><strong>inline</strong> - every time the function is called, its code will be copied to where it&rsquo;s invoked</li>
+<li><strong>jump</strong> - every time the function is called, a jump is made to where that function is defined to read the code of the function (similar to working with GOTO for those that still remember it).</li>
+</ul>
+<p>So, how does it affect gas consumption? Whenever we use <strong>inline</strong>, e.g. copy the body of a function, we increase our deployed code size in bytes. On the other side, when we use <strong>jump</strong> we work with two extra OPCODEs: JUMP -&gt; execute the function -&gt; JUMP BACK, which is pricey.</p>
+<p>This is where the &lsquo;runs&rsquo; parameter comes into the spotlight. The runs parameter is part of Optimiser that allows you to make a tradeoff between the two:</p>
+<ol>
+<li>price of a contract <strong>deployment</strong></li>
+<li>price of contract <strong>execution</strong>.</li>
+</ol>
+<p>The runs parameter operates on a bytecode level (applied during compiling from Solidity to bytecode) and it gives hints to Compiler Optimisator on how many times a single OPCODE will be repeated. This enables inlining a function first x times, and after that to execute without inlining.</p>
+<p>It allows for a fine-tuning of how much will the deployment and execution cost. The lower the runs parameter, the lower the deployment value. The higher it is, thus the cheaper execution is.</p>
+<p>The trick is - deployment is paid by the developer, while the user covers the execution costs. For a user-friendly smart contract, the runs parameter should be set so that the user does not spend a fortune on execution.</p>
+<h2 id="data-structures">Data structures</h2>
+<h3 id="packing-variables">Packing variables</h3>
+<p>This is usually the first advice that pops up when browsing for Solidity gas optimisation, but also one of the trickiest to apply.</p>
+<p>In this section, we refer to variables that are already stored in EVM (creating variables won’t be observed here). <strong>Important</strong>: according to Ethereum yellow paper, the store operation is a byte-level operation (not a variable level one), thus relevant for hexadecimal pairs.</p>
+<p>What is charged in gas is changing some of the variable’s bytes from hexadecimal zero to hexadecimal non-zero:</p>
+<ul>
+<li>hex non-zero → hex non-zero: not noticeable in charges</li>
+<li>hex zero → hex non-zero: expensive</li>
+<li>hex non-zero → hex zero: refund (max 1/5 of tx)</li>
+</ul>
+<p>Having in mind that preserving zero in hardware is much cheaper than non-zero, the incentivisation to have as many zeros as possible does not come as surprise.</p>
+<p>Regarding constants, this trick is applicable during deployment and it&rsquo;s only notable if the deployment is frequent. Try it out here.</p>
+<p>When EVM executes modifying variables operations, it is operating with 32B size variables, i.e. 256b. Storage slots are organised in a unit of 32B, but there is more.</p>
+<p>Smaller variables can be organised together so that one slot can hold multiple variables! For unlocking that possibility variables have to be organised in a sequential manner be it struct, or array. Take a look at the example below:</p>
+<p>But, beware: all OPCODEs, except for read and write, run on 32B variables. ADD, SUM, PUSH etc operate with 32B, so even if the variable is declared as uint64, it still has to be converted into uint256 so that the desired OPCODE can be applied, and then converted back to uint64. Applying those additional steps is expensive due to additional OPCODEs for conversion.</p>
+<h3 id="maps-and-arrays">Maps and Arrays</h3>
+<p>Compared to arrays, maps are more cost-effective. Nevertheless, arrays come with advantages as well: they&rsquo;re more iterable and packable.</p>
+<p>In order to be iterable arrays contain additional structures. As a result, it is more costly to use arrays for storing variables. To make it more interesting, dynamic arrays have a storage slot which contains the info on the size of the array, and to determine the actual position of the array, the Keccak algorithm is implemented. I&rsquo;m attaching the link for a playground below.</p>
+<h3 id="freeing-storage">Freeing storage</h3>
+<p>For every struct, array or map that is deleted, a variable set to zero or string set to an empty string EVM refunds 4800 gas (or up to 1/5 of tx cost) <strong>at the end of the transaction</strong>.</p>
+<p>Note: refunded gas <strong>cannot be used during the transaction</strong>, given the fact that the gas is refunded at the end of the transaction. Give it a try here and let me know if you experienced the same.</p>
+<p>Rules were different in the past, but some people took advantage of this feature: they stored when prices were low, and cleared out when prices were high.</p>
+<h2 id="control-flow">Control Flow</h2>
+<h3 id="visibility">Visibility</h3>
+<p>The keyword &lsquo;public&rsquo; is a combination of the &rsquo;external&rsquo; and &lsquo;internal&rsquo; keywords.</p>
+<ul>
+<li>external - open exclusively for outside-of-the-contract usage</li>
+<li>internal - only for inside-of-the-contract usage</li>
+</ul>
+<p>Keywords &lsquo;internal&rsquo; and &rsquo;external&rsquo; are more gas efficient than &lsquo;public&rsquo;, so use them where possible to tweak some expenses. &lsquo;View&rsquo; is free, but cannot change internal storage.</p>
+<h3 id="variable-caching">Variable caching</h3>
+<p>If a storage variable is used on multiple occasions it should be stored in a separate variable instead. E.g, when iterating over an array using i&lt;myArray.length it&rsquo;s going to be more useful to cache it in a separate variable (e.g. uint256 arrayLength = myArray.length). As storage reading cost some gas, accessing the storage numerous times should be avoided.</p>
+<h3 id="memory-vs-calldata">Memory vs Calldata</h3>
+<p>No need to change parameters within the function? Great, declare them as &lsquo;calldata&rsquo; rather than &lsquo;memory&rsquo; and save yourself a dime. &lsquo;Memory&rsquo; and &lsquo;calldata&rsquo; are stored in different places in EVM.</p>
+<p>By default, variables are set to &lsquo;memory&rsquo;. Given the fact that parameters are already located in the &lsquo;calldata&rsquo; section, if the default setting is not changed they&rsquo;ll be copied to the &lsquo;memory&rsquo; part.</p>
+<h3 id="more-tricks">More Tricks</h3>
+<ul>
+<li>if there is a certainty that some variable cannot overflow, it is useful to put &lsquo;unchecked&rsquo; at the end of the loop in front of the increment (like unchecked ++i).</li>
+<li>the compiler always looks at the left-hand side of the equation first so it&rsquo;s a fine choice to interrupt those ANDs and ORs as fast as possible.</li>
+</ul>
+<h2 id="design-patterns">Design Patterns</h2>
+<h3 id="proxy">Proxy</h3>
+<p>The proxy pattern is used mainly for upgrading smart contract logic. E.g, you want to upgrade your smart contract but there are existing state and users.</p>
+<p>A proxy contract comes into the scene as a sort of interface in OOP (web2 devs will understand).</p>
+<p>This smart contract contains all the data and empty methods. Its trade is delegating execution to some other contract, implemented in such a way that it uses storage of the proxy contract. The call used thereby is a low-level call &lsquo;delegate&rsquo;.</p>
+<h3 id="eternal-storage">Eternal storage</h3>
+<p>In this pattern, a separate smart contract is used as a database. Every time that the original contract seeks some data, a &lsquo;set&rsquo; call is used to fetch them.</p>
+<ul>
+<li>pros: no copying of data when the original contract upgrades to a new version</li>
+<li>cons: every read or write operation with an external contract generates an additional gas fee (not a situation with proxy pattern)</li>
+</ul>
+
     </article>
 
 
@@ -207,12 +279,14 @@ xmlns="http://www.w3.org/2000/svg"
 
 
 
-
-
-
     
     
     
+        
+    
+
+
+
 
 <section id="articleNext" class="section nartrow">
     <h3 class="footer-next-heading">More articles from 0xMilica Web3 Blog</h3>
@@ -220,41 +294,41 @@ xmlns="http://www.w3.org/2000/svg"
     <div class="next-articles-grid" numberOfArticles={numberOfArticles}>
         <div class="post-row">
             
-                <a href="/post/public-key-infrastructure/" class="article-link"
+                <a href="/post/what-is-zero-knowledge-proof/" class="article-link"
                  id="article-link-bigger">
                     <div>
                         <div class="image-container">
-                            <img src="/images/public-key-infrastructure.jpg" class="article-image" />
+                            <img src="/images/zero-knowledge-proof-explained.png" class="article-image" />
                         </div>
                         <div>
                             <h2 class="article-title">
-                                Public Key Infrastructure
+                                WTH is Zero Knowledge Proof?
                             </h2>
                             <p class="article-excerpt">
-                                Until the 1970s, symmetric encryption was the only type of encryption we know of. Like the lock with...
+                                Simple explanation of zero knowledge proof concept
                             </p>
                             <div class="article-metadata">
-                                May 31, 2023 · 3 min read
+                                January 12, 2023 · 3 min read
                             </div>
                         </div>
                     </div>
                 </a>
             
-                <a href="/post/the-most-important-blockchain-development-skill/" class="article-link"
+                <a href="/post/creating-light-nodes-using-substrate-connect/" class="article-link"
                 >
                     <div>
                         <div class="image-container">
-                            <img src="/images/blockchain-development.png" class="article-image" />
+                            <img src="/images/substrate-connect.png" class="article-image" />
                         </div>
                         <div>
                             <h2 class="article-title">
-                                The most important blockchain development skill
+                                Creating light nodes using substrate-connect
                             </h2>
                             <p class="article-excerpt">
-                                Hoes does the knowledge of web2 development can impact your learning of web3 development
+                                Learn the best way to create light nodes
                             </p>
                             <div class="article-metadata">
-                                May 24, 2023 · 2 min read
+                                December 15, 2022 · 1 min read
                             </div>
                         </div>
                     </div>

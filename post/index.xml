@@ -51,6 +51,16 @@ Every time I looked around, I found experts. ZKs, biology, ageing, longevity, ne
     </item>
     
     <item>
+      <title>Optimising gas usage in Solidity</title>
+      <link>http://heyagain.net/post/optimising-gas-usage-in-solidity/</link>
+      <pubDate>Mon, 06 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://heyagain.net/post/optimising-gas-usage-in-solidity/</guid>
+      <description>Lately, it became tricky to find truly efficient solutions for gas optimisation online. What happens is, either they are simply wrong assumptions, or they became obsolete in the meantime, or we need more context to fully understand the proposed solution. But, one thing is for sure - There is always some puzzle missing.
+The following examples are based on Branislav&amp;rsquo;s lecture using the Tenderly gas profiler and simulations which are completely free - make sure to create a profile there and enjoy a tool that gives you incredible insight into gas consumption while supporting a variety of EVM-compatible networks (you can always contact them if there is no network of your preference ATM)</description>
+    </item>
+    
+    <item>
       <title>WTH is Zero Knowledge Proof?</title>
       <link>http://heyagain.net/post/what-is-zero-knowledge-proof/</link>
       <pubDate>Thu, 12 Jan 2023 00:00:00 +0000</pubDate>
@@ -70,15 +80,6 @@ This magic is done by allowing the prover to create a mathematical proof that th
 Many web3 folks are not quite aware that things are pretty centralised in our decentralised world.
 Decentralisation in reality MetaMask, behind the scenes, is using Infura infrastructure.
 Stefan made a solid point that the focal point of all the requests* MetaMask handles is in fact based on the East Coast, USA, through the same blockchain node provider.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://heyagain.net/post/optimising-gas-usage-in-solidity/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://heyagain.net/post/optimising-gas-usage-in-solidity/</guid>
-      <description></description>
     </item>
     
   </channel>
