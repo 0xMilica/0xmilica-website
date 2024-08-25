@@ -205,7 +205,7 @@ not an actual network - can&rsquo;t do production on the fork.</p>
 <p><img src="/images/clean-code-or-gas-efficiency.jpeg" alt="Gas efficiency or clean code!" title="Gas efficiency or clean code"></p>
 <p>Major culprit? Calling other contracts is pricey - avoiding it can save you some gas.</p>
 <p>Following the <a href="https://sandbox.tenderly.co/branislav/gas-monolith">example</a> below, you can test and try both monolith and modular approaches. When looking at the modular case, you can notice that there is an internal overhead in gas consumption, even though it is an internal call.</p>
-<p>(<a href="https://sandbox.tenderly.co/0xMilica/gas-monolith">https://sandbox.tenderly.co/0xMilica/gas-monolith</a>)</p>
+<p><a href="https://sandbox.tenderly.co/0xMilica/gas-monolith">https://sandbox.tenderly.co/0xMilica/gas-monolith</a></p>
 <p>Saving gas using this technique is possible only if we are the creators of the contract. If someone else owns that contract, then, due to a lack of possibilities, we are compelled to use a modular approach.</p>
 <h2 id="compiler-optimisation">Compiler Optimisation</h2>
 <h3 id="understanding-the-runs-parameter">Understanding the runs parameter</h3>
@@ -240,7 +240,7 @@ not an actual network - can&rsquo;t do production on the fork.</p>
 <p>Regarding constants, this trick is applicable during deployment and it&rsquo;s only notable if the deployment is frequent. Try it out <a href="https://sandbox.tenderly.co/branislav/zeros">here</a>.</p>
 <p>When EVM executes modifying variables operations, it is operating with 32B size variables, i.e. 256b. Storage slots are organised in a unit of 32B, but there is more.</p>
 <p>Smaller variables can be organised together so that one slot can hold multiple variables! For unlocking that possibility variables have to be organised in a sequential manner be it struct, or array. Take a look at the example <a href="https://sandbox.tenderly.co/branislav/structs1">below</a>:</p>
-<p>(<a href="https://sandbox.tenderly.co/branislav/structs1">https://sandbox.tenderly.co/branislav/structs1</a>)</p>
+<p><a href="https://sandbox.tenderly.co/branislav/structs1">https://sandbox.tenderly.co/branislav/structs1</a></p>
 <p>But, beware: all OPCODEs, except for read and write, run on 32B variables. ADD, SUM, PUSH etc operate with 32B, so even if the variable is declared as uint64, it still has to be converted into uint256 so that the desired OPCODE can be applied, and then converted back to uint64. Applying those additional steps is expensive due to additional OPCODEs for conversion.</p>
 <h3 id="maps-and-arrays">Maps and Arrays</h3>
 <p>Compared to arrays, maps are more cost-effective. Nevertheless, arrays come with advantages as well: they&rsquo;re more iterable and packable.</p>
