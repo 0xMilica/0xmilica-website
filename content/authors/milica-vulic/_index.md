@@ -5,7 +5,7 @@ bio: "Blockchain Developer relations engineer with years of hands-on Software De
   proof enthusiast \U0001F440 Social butterfly \U0001F98B\n"
 avatar: "/images/logo.png"
 social:
-- title: github
+- title: x
   url: https://x.com/0xMilica
 - title: github
   url: https://github.com/0xMilica
