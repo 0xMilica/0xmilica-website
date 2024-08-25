@@ -59,7 +59,7 @@ Major culprit? Calling other contracts is pricey - avoiding it can save you some
 
 Following the [example](https://sandbox.tenderly.co/branislav/gas-monolith) below, you can test and try both monolith and modular approaches. When looking at the modular case, you can notice that there is an internal overhead in gas consumption, even though it is an internal call.
 
-(https://sandbox.tenderly.co/0xMilica/gas-monolith)
+https://sandbox.tenderly.co/0xMilica/gas-monolith
 
 Saving gas using this technique is possible only if we are the creators of the contract. If someone else owns that contract, then, due to a lack of possibilities, we are compelled to use a modular approach.
 
@@ -112,7 +112,7 @@ When EVM executes modifying variables operations, it is operating with 32B size 
 
 Smaller variables can be organised together so that one slot can hold multiple variables! For unlocking that possibility variables have to be organised in a sequential manner be it struct, or array. Take a look at the example [below](https://sandbox.tenderly.co/branislav/structs1):
 
-(https://sandbox.tenderly.co/branislav/structs1)
+https://sandbox.tenderly.co/branislav/structs1
 
 But, beware: all OPCODEs, except for read and write, run on 32B variables. ADD, SUM, PUSH etc operate with 32B, so even if the variable is declared as uint64, it still has to be converted into uint256 so that the desired OPCODE can be applied, and then converted back to uint64. Applying those additional steps is expensive due to additional OPCODEs for conversion.
 
