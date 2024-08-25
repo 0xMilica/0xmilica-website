@@ -1,7 +1,7 @@
 ---
 title: Optimising gas usage in Solidity
 date: 2023-02-06
-hero: "/images/substrate-connect.png"
+hero: "/images/optimizing-gas-usage-solidity.jpg"
 excerpt: The best way to save on gas with smart contracts
 timeToRead: 10
 authors:
@@ -10,7 +10,7 @@ authors:
 
 Lately, it became tricky to find truly efficient solutions for gas optimisation online. What happens is, either they are simply wrong assumptions, or they became obsolete in the meantime, or we need more context to fully understand the proposed solution. But, one thing is for sure - There is always some puzzle missing.
 
-The following examples are based on Branislav's lecture using the Tenderly gas profiler and simulations which are completely free - make sure to create a profile there and enjoy a tool that gives you incredible insight into gas consumption while supporting a variety of EVM-compatible networks (you can always contact them if there is no network of your preference ATM)
+The following examples are based on [Branislav](https://twitter.com/baneofweb3)'s [lecture](https://youtu.be/zmItvMeW4dg) using the Tenderly gas profiler and simulations which are completely free - make sure to create a profile there and enjoy a tool that gives you incredible insight into gas consumption while supporting a variety of EVM-compatible networks (you can always contact them if there is no network of your preference ATM)
 
 ## Transaction - Level
 
