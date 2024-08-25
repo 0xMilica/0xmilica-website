@@ -2,39 +2,39 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://heyagain.net/</loc>
+    <loc>http://0xmilica.com/</loc>
     <lastmod>2023-05-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://heyagain.net/authors/</loc>
+    <loc>http://0xmilica.com/authors/</loc>
     <lastmod>2023-05-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://heyagain.net/authors/milica-vulic/</loc>
+    <loc>http://0xmilica.com/authors/milica-vulic/</loc>
     <lastmod>2023-05-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://heyagain.net/post/</loc>
+    <loc>http://0xmilica.com/post/</loc>
     <lastmod>2023-05-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://heyagain.net/post/public-key-infrastructure/</loc>
+    <loc>http://0xmilica.com/post/public-key-infrastructure/</loc>
     <lastmod>2023-05-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://heyagain.net/post/the-most-important-blockchain-development-skill/</loc>
+    <loc>http://0xmilica.com/post/the-most-important-blockchain-development-skill/</loc>
     <lastmod>2023-05-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://heyagain.net/post/why-do-we-need-account-abstraction/</loc>
+    <loc>http://0xmilica.com/post/why-do-we-need-account-abstraction/</loc>
     <lastmod>2023-05-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://heyagain.net/post/when-zk-meets-medicine/</loc>
+    <loc>http://0xmilica.com/post/when-zk-meets-medicine/</loc>
     <lastmod>2023-05-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://heyagain.net/post/optimising-gas-usage-in-solidity/</loc>
+    <loc>http://0xmilica.com/post/optimising-gas-usage-in-solidity/</loc>
     <lastmod>2023-02-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://heyagain.net/post/what-is-zero-knowledge-proof/</loc>
+    <loc>http://0xmilica.com/post/what-is-zero-knowledge-proof/</loc>
     <lastmod>2023-01-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://heyagain.net/post/creating-light-nodes-using-substrate-connect/</loc>
+    <loc>http://0xmilica.com/post/creating-light-nodes-using-substrate-connect/</loc>
     <lastmod>2022-12-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://heyagain.net/about/</loc>
+    <loc>http://0xmilica.com/about/</loc>
   </url>
 </urlset>

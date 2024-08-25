@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Milica Vulic on 0xMilica Web3 Blog</title>
-    <link>http://heyagain.net/authors/milica-vulic/</link>
+    <link>http://0xmilica.com/authors/milica-vulic/</link>
     <description>Recent content in Milica Vulic on 0xMilica Web3 Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 31 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://heyagain.net/authors/milica-vulic/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 31 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://0xmilica.com/authors/milica-vulic/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Public Key Infrastructure</title>
-      <link>http://heyagain.net/post/public-key-infrastructure/</link>
+      <link>http://0xmilica.com/post/public-key-infrastructure/</link>
       <pubDate>Wed, 31 May 2023 00:00:00 +0000</pubDate>
       
-      <guid>http://heyagain.net/post/public-key-infrastructure/</guid>
+      <guid>http://0xmilica.com/post/public-key-infrastructure/</guid>
       <description>Until the 1970s, symmetric encryption was the only type of encryption we know of.
 Like the lock with multiple keys, when using symmetric encryption, the sender sends a message encrypted with a key, and the receiver must hold the identical key to decrypt a message.
 In cryptography, we usually introduce Alice and Bob as the sender and the receiver.
@@ -21,30 +21,30 @@ Alice and Bob must either meet physically or use some of the key exchange algori
     
     <item>
       <title>The most important blockchain development skill</title>
-      <link>http://heyagain.net/post/the-most-important-blockchain-development-skill/</link>
+      <link>http://0xmilica.com/post/the-most-important-blockchain-development-skill/</link>
       <pubDate>Wed, 24 May 2023 00:00:00 +0000</pubDate>
       
-      <guid>http://heyagain.net/post/the-most-important-blockchain-development-skill/</guid>
+      <guid>http://0xmilica.com/post/the-most-important-blockchain-development-skill/</guid>
       <description>Given my role, I often get the question “What is the most important thing to learn to make a proper transition from web2 to web3?”
 Indeed, no matter how important technologies are along the way because, of course, you can’t do without them, what sets a top-notch web3 developer apart is a complete change of mindset. Regardless of whether you are dealing with Solana, Polygon or Ethereum, you won’t go far without it.</description>
     </item>
     
     <item>
       <title>Why do we need Account Abstraction?</title>
-      <link>http://heyagain.net/post/why-do-we-need-account-abstraction/</link>
+      <link>http://0xmilica.com/post/why-do-we-need-account-abstraction/</link>
       <pubDate>Wed, 24 May 2023 00:00:00 +0000</pubDate>
       
-      <guid>http://heyagain.net/post/why-do-we-need-account-abstraction/</guid>
+      <guid>http://0xmilica.com/post/why-do-we-need-account-abstraction/</guid>
       <description>As time flies, us humans are less satisfied with our inventions than we were when we conceived the idea. We are streaming to making things better with every iteration, and that’s precisely what makes us both imperfect and imperfect beings; at the same time, struggling to find peace within ourselves and feel relieved when we change the world for the better.
 Before Account Abstraction We were not satisfied with smart contracts and EOAs.</description>
     </item>
     
     <item>
       <title>When ZK meets Medicine</title>
-      <link>http://heyagain.net/post/when-zk-meets-medicine/</link>
+      <link>http://0xmilica.com/post/when-zk-meets-medicine/</link>
       <pubDate>Thu, 18 May 2023 00:00:00 +0000</pubDate>
       
-      <guid>http://heyagain.net/post/when-zk-meets-medicine/</guid>
+      <guid>http://0xmilica.com/post/when-zk-meets-medicine/</guid>
       <description>What on Earth could bring such a collaboration? How could one combine the two?
 Being part of Zuzalu is an exciting and immersive experience in many manners, especially when it comes to widening our views. It was quite an honour to be invited to spend two months with some of the world&amp;rsquo;s most remarkable experts in different fields.
 Every time I looked around, I found experts. ZKs, biology, ageing, longevity, network states, DeSci… you name it.</description>
@@ -52,30 +52,30 @@ Every time I looked around, I found experts. ZKs, biology, ageing, longevity, ne
     
     <item>
       <title>Optimising gas usage in Solidity</title>
-      <link>http://heyagain.net/post/optimising-gas-usage-in-solidity/</link>
+      <link>http://0xmilica.com/post/optimising-gas-usage-in-solidity/</link>
       <pubDate>Mon, 06 Feb 2023 00:00:00 +0000</pubDate>
       
-      <guid>http://heyagain.net/post/optimising-gas-usage-in-solidity/</guid>
+      <guid>http://0xmilica.com/post/optimising-gas-usage-in-solidity/</guid>
       <description>Lately, it became tricky to find truly efficient solutions for gas optimisation online. What happens is, either they are simply wrong assumptions, or they became obsolete in the meantime, or we need more context to fully understand the proposed solution. But, one thing is for sure - There is always some puzzle missing.
 The following examples are based on Branislav&amp;rsquo;s lecture using the Tenderly gas profiler and simulations which are completely free - make sure to create a profile there and enjoy a tool that gives you incredible insight into gas consumption while supporting a variety of EVM-compatible networks (you can always contact them if there is no network of your preference ATM)</description>
     </item>
     
     <item>
       <title>WTH is Zero Knowledge Proof?</title>
-      <link>http://heyagain.net/post/what-is-zero-knowledge-proof/</link>
+      <link>http://0xmilica.com/post/what-is-zero-knowledge-proof/</link>
       <pubDate>Thu, 12 Jan 2023 00:00:00 +0000</pubDate>
       
-      <guid>http://heyagain.net/post/what-is-zero-knowledge-proof/</guid>
+      <guid>http://0xmilica.com/post/what-is-zero-knowledge-proof/</guid>
       <description>Zero-knowledge proof is a method by which one party (the prover) can prove to another party (the verifier) that a given statement is true, without revealing any additional information beyond the fact that the given statement is true.
 This magic is done by allowing the prover to create a mathematical proof that the statement in question is true, which the verifier can then check without the need to see any additional information.</description>
     </item>
     
     <item>
       <title>Creating light nodes using substrate-connect</title>
-      <link>http://heyagain.net/post/creating-light-nodes-using-substrate-connect/</link>
+      <link>http://0xmilica.com/post/creating-light-nodes-using-substrate-connect/</link>
       <pubDate>Thu, 15 Dec 2022 00:00:00 +0000</pubDate>
       
-      <guid>http://heyagain.net/post/creating-light-nodes-using-substrate-connect/</guid>
+      <guid>http://0xmilica.com/post/creating-light-nodes-using-substrate-connect/</guid>
       <description>I had the pleasure of joining the discussion about light nodes integrated into wallets hosted by Stefan Sopic from Parity Technologies.
 Many web3 folks are not quite aware that things are pretty centralised in our decentralised world.
 Decentralisation in reality MetaMask, behind the scenes, is using Infura infrastructure.
