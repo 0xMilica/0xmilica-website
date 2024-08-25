@@ -34,9 +34,9 @@ While <contract.sol> represents a smart contract, <script.js> is there to deploy
 ### Tenderly fork
 [Tenderly](https://tenderly.co/) fork is not an actual Ethereum fork, but rather an internal Mainnet representation, or a representation of a network of your choice.
 
+![Tenderly!](/images/tenderly.jpg "Tenderly")
 
 **Pros:**
-
 - cosy for gas cost profiling compared to the test networks where there is waiting on consensus after deployment
 - a sum of 100 Ethers could be assigned out of thin air, which makes it possible to completely manipulate the internal state
 - there is a complete EVM implemented in such a way that you won't lack a feeling of working with a true EVM, but still, you won't interact with the blockchain
@@ -45,7 +45,6 @@ While <contract.sol> represents a smart contract, <script.js> is there to deploy
 - others can contribute - a fork can be shared among the team
   
 **Cons:**
-
 not an actual network - can't do production on the fork.
 
 ### Limit external calls
@@ -53,6 +52,8 @@ Contrary to web2 logic and OOP rules of thumb, it is more gas efficient to work 
 
 - Modular approach: creating smart contracts like classes in OOP - clean code approach. Usually, you would take references on contracts and call them.
 - Monolithic approach: all functions within a single smart contract
+
+![Gas efficiency or clean code!](/images/clean-code-or-gas-efficiency.jpeg "Gas efficiency or clean code")
 
 Major culprit? Calling other contracts is pricey - avoiding it can save you some gas.
 
@@ -80,6 +81,7 @@ So, how does it affect gas consumption? Whenever we use **inline**, e.g. copy th
    
 The runs parameter operates on a bytecode level (applied during compiling from Solidity to bytecode) and it gives hints to Compiler Optimisator on how many times a single OPCODE will be repeated. This enables inlining a function first x times, and after that to execute without inlining.
 
+![Contract execution or deployment cost!](/images/contract-execution-or-deployment-cost.jpeg "Contract execution or deployment cost")
 
 It allows for a fine-tuning of how much will the deployment and execution cost. The lower the runs parameter, the lower the deployment value. The higher it is, thus the cheaper execution is.
 
@@ -97,6 +99,8 @@ What is charged in gas is changing some of the variable’s bytes from hexadecim
 - hex non-zero → hex non-zero: not noticeable in charges
 - hex zero → hex non-zero: expensive
 - hex non-zero → hex zero: refund (max 1/5 of tx)
+
+![Getting a gas refund!](/images/gas-refund.jpeg "Getting a gas refund")
 
 Having in mind that preserving zero in hardware is much cheaper than non-zero, the incentivisation to have as many zeros as possible does not come as surprise.
 
@@ -134,6 +138,7 @@ The keyword 'public' is a combination of the 'external' and 'internal' keywords.
   
 Keywords 'internal' and 'external' are more gas efficient than 'public', so use them where possible to tweak some expenses. 'View' is free, but cannot change internal storage.
 
+![External and public variable difference!](/images/external-and-public-variable-difference.jpeg "External and public variable difference")
 
 ### Variable caching
 If a storage variable is used on multiple occasions it should be stored in a separate variable instead. E.g, when iterating over an array using i<myArray.length it's going to be more useful to cache it in a separate variable (e.g. uint256 arrayLength = myArray.length). As storage reading cost some gas, accessing the storage numerous times should be avoided.
@@ -161,3 +166,5 @@ In this pattern, a separate smart contract is used as a database. Every time tha
 
 - pros: no copying of data when the original contract upgrades to a new version
 - cons: every read or write operation with an external contract generates an additional gas fee (not a situation with proxy pattern)
+
+![Expensive gas prices!](/images/expensive-gas-prices.jpeg "Expensive gas prices")
