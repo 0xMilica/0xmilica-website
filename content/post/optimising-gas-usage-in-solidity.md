@@ -23,13 +23,13 @@ To batch, or not to batch, that is the question
 
 To be able to conclude whether or not batching is a favourable operation we have to take into consideration how much gas is saved up on the initial gas fee. With enough transactions batched, a single initial gas fee could be advantageous even for an internal call that consumes Ether.
 
-Let's take a look at this example in Tenderly sandbox. It is such a nice place for creating prototypes without doing an actual deployment.
+Let's take a look at this example in Tenderly [sandbox](https://sandbox.tenderly.co/branislav/gas-batching). It is such a nice place for creating prototypes without doing an actual deployment.
 
 
 While <contract.sol> represents a smart contract, <script.js> is there to deploy it on the Tenderly fork. In the Simulated transactions card, you can click on 'work1' or 'work 2', open both of these transactions and inspect how much gas each of them consumed. If you check the Gas profiler section, you could find a piece-by-piece breakdown of the method by gas consumption. Great, isn't it?
 
 ### Tenderly fork
-Tenderly fork is not an actual Ethereum fork, but rather an internal Mainnet representation, or a representation of a network of your choice.
+[Tenderly](https://tenderly.co/) fork is not an actual Ethereum fork, but rather an internal Mainnet representation, or a representation of a network of your choice.
 
 
 **Pros:**
@@ -53,7 +53,7 @@ Contrary to web2 logic and OOP rules of thumb, it is more gas efficient to work 
 
 Major culprit? Calling other contracts is pricey - avoiding it can save you some gas.
 
-Following the example below, you can test and try both monolith and modular approaches. When looking at the modular case, you can notice that there is an internal overhead in gas consumption, even though it is an internal call.
+Following the [example](https://sandbox.tenderly.co/branislav/gas-monolith) below, you can test and try both monolith and modular approaches. When looking at the modular case, you can notice that there is an internal overhead in gas consumption, even though it is an internal call.
 
 
 Saving gas using this technique is possible only if we are the creators of the contract. If someone else owns that contract, then, due to a lack of possibilities, we are compelled to use a modular approach.
@@ -70,7 +70,7 @@ When it comes to running functions, there are two options:
 So, how does it affect gas consumption? Whenever we use **inline**, e.g. copy the body of a function, we increase our deployed code size in bytes. On the other side, when we use **jump** we work with two extra OPCODEs: JUMP -> execute the function -> JUMP BACK, which is pricey.
 
 
-This is where the 'runs' parameter comes into the spotlight. The runs parameter is part of Optimiser that allows you to make a tradeoff between the two:
+[This](https://sandbox.tenderly.co/branislav/gas-monolith) is where the 'runs' parameter comes into the spotlight. The runs parameter is part of Optimiser that allows you to make a tradeoff between the two:
 
 1. price of a contract **deployment**
 2. price of contract **execution**.
@@ -87,7 +87,7 @@ The trick is - deployment is paid by the developer, while the user covers the ex
 ### Packing variables
 This is usually the first advice that pops up when browsing for Solidity gas optimisation, but also one of the trickiest to apply.
 
-In this section, we refer to variables that are already stored in EVM (creating variables won’t be observed here). **Important**: according to Ethereum yellow paper, the store operation is a byte-level operation (not a variable level one), thus relevant for hexadecimal pairs.
+In this section, we refer to variables that are already stored in EVM (creating variables won’t be observed here). **Important**: according to [Ethereum yellow paper](https://ethereum.github.io/yellowpaper/paper.pdf), the store operation is a byte-level operation (not a variable level one), thus relevant for hexadecimal pairs.
 
 What is charged in gas is changing some of the variable’s bytes from hexadecimal zero to hexadecimal non-zero:
 
@@ -97,12 +97,12 @@ What is charged in gas is changing some of the variable’s bytes from hexadecim
 
 Having in mind that preserving zero in hardware is much cheaper than non-zero, the incentivisation to have as many zeros as possible does not come as surprise.
 
-Regarding constants, this trick is applicable during deployment and it's only notable if the deployment is frequent. Try it out here.
+Regarding constants, this trick is applicable during deployment and it's only notable if the deployment is frequent. Try it out [here](https://sandbox.tenderly.co/branislav/zeros).
 
 
 When EVM executes modifying variables operations, it is operating with 32B size variables, i.e. 256b. Storage slots are organised in a unit of 32B, but there is more.
 
-Smaller variables can be organised together so that one slot can hold multiple variables! For unlocking that possibility variables have to be organised in a sequential manner be it struct, or array. Take a look at the example below:
+Smaller variables can be organised together so that one slot can hold multiple variables! For unlocking that possibility variables have to be organised in a sequential manner be it struct, or array. Take a look at the example [below](https://sandbox.tenderly.co/branislav/structs1):
 
 
 But, beware: all OPCODEs, except for read and write, run on 32B variables. ADD, SUM, PUSH etc operate with 32B, so even if the variable is declared as uint64, it still has to be converted into uint256 so that the desired OPCODE can be applied, and then converted back to uint64. Applying those additional steps is expensive due to additional OPCODEs for conversion.
@@ -116,7 +116,7 @@ In order to be iterable arrays contain additional structures. As a result, it is
 ### Freeing storage
 For every struct, array or map that is deleted, a variable set to zero or string set to an empty string EVM refunds 4800 gas (or up to 1/5 of tx cost) **at the end of the transaction**.
 
-Note: refunded gas **cannot be used during the transaction**, given the fact that the gas is refunded at the end of the transaction. Give it a try here and let me know if you experienced the same.
+Note: refunded gas **cannot be used during the transaction**, given the fact that the gas is refunded at the end of the transaction. Give it a try [here](https://sandbox.tenderly.co/branislav/gas-refund) and let me know if you experienced the same.
 
 
 Rules were different in the past, but some people took advantage of this feature: they stored when prices were low, and cleared out when prices were high.
