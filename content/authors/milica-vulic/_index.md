@@ -13,7 +13,7 @@ social:
   url: https://www.linkedin.com/in/0xmilica/
 - title: youtube
   url: https://www.youtube.com/@0xMilica
-- title: github
+- title: telegram
   url: https://t.me/Milica0x
 ---
 
