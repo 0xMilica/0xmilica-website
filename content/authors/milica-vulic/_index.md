@@ -11,7 +11,7 @@ social:
   url: https://github.com/0xMilica
 - title: linkedin
   url: https://www.linkedin.com/in/0xmilica/
-- title: github
+- title: youtube
   url: https://www.youtube.com/@0xMilica
 - title: github
   url: https://t.me/Milica0x
