@@ -184,6 +184,7 @@ The following examples are based on Branislav&rsquo;s lecture using the Tenderly
 <p>While &lt;contract.sol&gt; represents a smart contract, &lt;script.js&gt; is there to deploy it on the Tenderly fork. In the Simulated transactions card, you can click on &lsquo;work1&rsquo; or &lsquo;work 2&rsquo;, open both of these transactions and inspect how much gas each of them consumed. If you check the Gas profiler section, you could find a piece-by-piece breakdown of the method by gas consumption. Great, isn&rsquo;t it?</p>
 <h3 id="tenderly-fork">Tenderly fork</h3>
 <p><a href="https://tenderly.co/">Tenderly</a> fork is not an actual Ethereum fork, but rather an internal Mainnet representation, or a representation of a network of your choice.</p>
+<p><img src="/images/tenderly.jpg" alt="Tenderly!" title="Tenderly"></p>
 <p><strong>Pros:</strong></p>
 <ul>
 <li>cosy for gas cost profiling compared to the test networks where there is waiting on consensus after deployment</li>
@@ -193,14 +194,15 @@ The following examples are based on Branislav&rsquo;s lecture using the Tenderly
 <li>your fork, your state - a fork is created per user</li>
 <li>others can contribute - a fork can be shared among the team</li>
 </ul>
-<p><strong>Cons:</strong></p>
-<p>not an actual network - can&rsquo;t do production on the fork.</p>
+<p><strong>Cons:</strong>
+not an actual network - can&rsquo;t do production on the fork.</p>
 <h3 id="limit-external-calls">Limit external calls</h3>
 <p>Contrary to web2 logic and OOP rules of thumb, it is more gas efficient to work with a monolith smart contract than to operate with several simple modules.</p>
 <ul>
 <li>Modular approach: creating smart contracts like classes in OOP - clean code approach. Usually, you would take references on contracts and call them.</li>
 <li>Monolithic approach: all functions within a single smart contract</li>
 </ul>
+<p><img src="/images/clean-code-or-gas-efficiency.jpeg" alt="Gas efficiency or clean code!" title="Gas efficiency or clean code"></p>
 <p>Major culprit? Calling other contracts is pricey - avoiding it can save you some gas.</p>
 <p>Following the <a href="https://sandbox.tenderly.co/branislav/gas-monolith">example</a> below, you can test and try both monolith and modular approaches. When looking at the modular case, you can notice that there is an internal overhead in gas consumption, even though it is an internal call.</p>
 <p>Saving gas using this technique is possible only if we are the creators of the contract. If someone else owns that contract, then, due to a lack of possibilities, we are compelled to use a modular approach.</p>
@@ -218,6 +220,7 @@ The following examples are based on Branislav&rsquo;s lecture using the Tenderly
 <li>price of contract <strong>execution</strong>.</li>
 </ol>
 <p>The runs parameter operates on a bytecode level (applied during compiling from Solidity to bytecode) and it gives hints to Compiler Optimisator on how many times a single OPCODE will be repeated. This enables inlining a function first x times, and after that to execute without inlining.</p>
+<p><img src="/images/contract-execution-or-deployment-cost.jpeg" alt="Contract execution or deployment cost!" title="Contract execution or deployment cost"></p>
 <p>It allows for a fine-tuning of how much will the deployment and execution cost. The lower the runs parameter, the lower the deployment value. The higher it is, thus the cheaper execution is.</p>
 <p>The trick is - deployment is paid by the developer, while the user covers the execution costs. For a user-friendly smart contract, the runs parameter should be set so that the user does not spend a fortune on execution.</p>
 <h2 id="data-structures">Data structures</h2>
@@ -230,6 +233,7 @@ The following examples are based on Branislav&rsquo;s lecture using the Tenderly
 <li>hex zero → hex non-zero: expensive</li>
 <li>hex non-zero → hex zero: refund (max 1/5 of tx)</li>
 </ul>
+<p><img src="/images/gas-refund.jpeg" alt="Getting a gas refund!" title="Getting a gas refund"></p>
 <p>Having in mind that preserving zero in hardware is much cheaper than non-zero, the incentivisation to have as many zeros as possible does not come as surprise.</p>
 <p>Regarding constants, this trick is applicable during deployment and it&rsquo;s only notable if the deployment is frequent. Try it out <a href="https://sandbox.tenderly.co/branislav/zeros">here</a>.</p>
 <p>When EVM executes modifying variables operations, it is operating with 32B size variables, i.e. 256b. Storage slots are organised in a unit of 32B, but there is more.</p>
@@ -250,6 +254,7 @@ The following examples are based on Branislav&rsquo;s lecture using the Tenderly
 <li>internal - only for inside-of-the-contract usage</li>
 </ul>
 <p>Keywords &lsquo;internal&rsquo; and &rsquo;external&rsquo; are more gas efficient than &lsquo;public&rsquo;, so use them where possible to tweak some expenses. &lsquo;View&rsquo; is free, but cannot change internal storage.</p>
+<p><img src="/images/external-and-public-variable-difference.jpeg" alt="External and public variable difference!" title="External and public variable difference"></p>
 <h3 id="variable-caching">Variable caching</h3>
 <p>If a storage variable is used on multiple occasions it should be stored in a separate variable instead. E.g, when iterating over an array using i&lt;myArray.length it&rsquo;s going to be more useful to cache it in a separate variable (e.g. uint256 arrayLength = myArray.length). As storage reading cost some gas, accessing the storage numerous times should be avoided.</p>
 <h3 id="memory-vs-calldata">Memory vs Calldata</h3>
@@ -271,6 +276,7 @@ The following examples are based on Branislav&rsquo;s lecture using the Tenderly
 <li>pros: no copying of data when the original contract upgrades to a new version</li>
 <li>cons: every read or write operation with an external contract generates an additional gas fee (not a situation with proxy pattern)</li>
 </ul>
+<p><img src="/images/expensive-gas-prices.jpeg" alt="Expensive gas prices!" title="Expensive gas prices"></p>
 
     </article>
 
