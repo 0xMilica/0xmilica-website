@@ -180,6 +180,7 @@ The following examples are based on Branislav&rsquo;s lecture using the Tenderly
 <p>To batch, or not to batch, that is the question</p>
 <p>To be able to conclude whether or not batching is a favourable operation we have to take into consideration how much gas is saved up on the initial gas fee. With enough transactions batched, a single initial gas fee could be advantageous even for an internal call that consumes Ether.</p>
 <p>Let&rsquo;s take a look at this example in Tenderly <a href="https://sandbox.tenderly.co/branislav/gas-batching">sandbox</a>. It is such a nice place for creating prototypes without doing an actual deployment.</p>
+<p>(<a href="https://sandbox.tenderly.co/0xMilica/gas-batching">https://sandbox.tenderly.co/0xMilica/gas-batching</a>)</p>
 <p>While &lt;contract.sol&gt; represents a smart contract, &lt;script.js&gt; is there to deploy it on the Tenderly fork. In the Simulated transactions card, you can click on &lsquo;work1&rsquo; or &lsquo;work 2&rsquo;, open both of these transactions and inspect how much gas each of them consumed. If you check the Gas profiler section, you could find a piece-by-piece breakdown of the method by gas consumption. Great, isn&rsquo;t it?</p>
 <h3 id="tenderly-fork">Tenderly fork</h3>
 <p><a href="https://tenderly.co/">Tenderly</a> fork is not an actual Ethereum fork, but rather an internal Mainnet representation, or a representation of a network of your choice.</p>
@@ -204,6 +205,7 @@ not an actual network - can&rsquo;t do production on the fork.</p>
 <p><img src="/images/clean-code-or-gas-efficiency.jpeg" alt="Gas efficiency or clean code!" title="Gas efficiency or clean code"></p>
 <p>Major culprit? Calling other contracts is pricey - avoiding it can save you some gas.</p>
 <p>Following the <a href="https://sandbox.tenderly.co/branislav/gas-monolith">example</a> below, you can test and try both monolith and modular approaches. When looking at the modular case, you can notice that there is an internal overhead in gas consumption, even though it is an internal call.</p>
+<p>(<a href="https://sandbox.tenderly.co/0xMilica/gas-monolith">https://sandbox.tenderly.co/0xMilica/gas-monolith</a>)</p>
 <p>Saving gas using this technique is possible only if we are the creators of the contract. If someone else owns that contract, then, due to a lack of possibilities, we are compelled to use a modular approach.</p>
 <h2 id="compiler-optimisation">Compiler Optimisation</h2>
 <h3 id="understanding-the-runs-parameter">Understanding the runs parameter</h3>
@@ -213,6 +215,7 @@ not an actual network - can&rsquo;t do production on the fork.</p>
 <li><strong>jump</strong> - every time the function is called, a jump is made to where that function is defined to read the code of the function (similar to working with GOTO for those that still remember it).</li>
 </ul>
 <p>So, how does it affect gas consumption? Whenever we use <strong>inline</strong>, e.g. copy the body of a function, we increase our deployed code size in bytes. On the other side, when we use <strong>jump</strong> we work with two extra OPCODEs: JUMP -&gt; execute the function -&gt; JUMP BACK, which is pricey.</p>
+<p>(<a href="https://sandbox.tenderly.co/0xMilica/uniswap">https://sandbox.tenderly.co/0xMilica/uniswap</a>)</p>
 <p><a href="https://sandbox.tenderly.co/branislav/gas-monolith">This</a> is where the &lsquo;runs&rsquo; parameter comes into the spotlight. The runs parameter is part of Optimiser that allows you to make a tradeoff between the two:</p>
 <ol>
 <li>price of a contract <strong>deployment</strong></li>
@@ -237,6 +240,7 @@ not an actual network - can&rsquo;t do production on the fork.</p>
 <p>Regarding constants, this trick is applicable during deployment and it&rsquo;s only notable if the deployment is frequent. Try it out <a href="https://sandbox.tenderly.co/branislav/zeros">here</a>.</p>
 <p>When EVM executes modifying variables operations, it is operating with 32B size variables, i.e. 256b. Storage slots are organised in a unit of 32B, but there is more.</p>
 <p>Smaller variables can be organised together so that one slot can hold multiple variables! For unlocking that possibility variables have to be organised in a sequential manner be it struct, or array. Take a look at the example <a href="https://sandbox.tenderly.co/branislav/structs1">below</a>:</p>
+<p>(<a href="https://sandbox.tenderly.co/branislav/structs1">https://sandbox.tenderly.co/branislav/structs1</a>)</p>
 <p>But, beware: all OPCODEs, except for read and write, run on 32B variables. ADD, SUM, PUSH etc operate with 32B, so even if the variable is declared as uint64, it still has to be converted into uint256 so that the desired OPCODE can be applied, and then converted back to uint64. Applying those additional steps is expensive due to additional OPCODEs for conversion.</p>
 <h3 id="maps-and-arrays">Maps and Arrays</h3>
 <p>Compared to arrays, maps are more cost-effective. Nevertheless, arrays come with advantages as well: they&rsquo;re more iterable and packable.</p>
