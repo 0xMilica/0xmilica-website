@@ -1,4 +1,4 @@
-baseURL: "http://heyagain.net"
+baseURL: "http://0xmilica.com"
 languageCode: "en-us"
 title: "0xMilica Web3 Blog"
 pygmentsstyle: 'monokai'
@@ -13,9 +13,7 @@ paginate: 6
 social:
   twitter: "#"
   github: "#"
-  instagram: "#"
   linkedin: "#"
-  dribbble: "#"
   youtube: "#"
 taxonomies:
   author: authors
