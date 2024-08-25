@@ -27,7 +27,7 @@ To be able to conclude whether or not batching is a favourable operation we have
 
 Let's take a look at this example in Tenderly [sandbox](https://sandbox.tenderly.co/branislav/gas-batching). It is such a nice place for creating prototypes without doing an actual deployment.
 
-(https://sandbox.tenderly.co/0xMilica/gas-batching)
+https://sandbox.tenderly.co/0xMilica/gas-batching
 
 While <contract.sol> represents a smart contract, <script.js> is there to deploy it on the Tenderly fork. In the Simulated transactions card, you can click on 'work1' or 'work 2', open both of these transactions and inspect how much gas each of them consumed. If you check the Gas profiler section, you could find a piece-by-piece breakdown of the method by gas consumption. Great, isn't it?
 
@@ -74,7 +74,7 @@ When it comes to running functions, there are two options:
   
 So, how does it affect gas consumption? Whenever we use **inline**, e.g. copy the body of a function, we increase our deployed code size in bytes. On the other side, when we use **jump** we work with two extra OPCODEs: JUMP -> execute the function -> JUMP BACK, which is pricey.
 
-(https://sandbox.tenderly.co/0xMilica/uniswap)
+https://sandbox.tenderly.co/0xMilica/uniswap
 
 [This](https://sandbox.tenderly.co/branislav/gas-monolith) is where the 'runs' parameter comes into the spotlight. The runs parameter is part of Optimiser that allows you to make a tradeoff between the two:
 
