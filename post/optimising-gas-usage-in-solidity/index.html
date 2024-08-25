@@ -34,7 +34,7 @@ The following examples are based on Branislav&rsquo;s lecture using the Tenderly
 <meta property="og:url" content="http://heyagain.net/post/optimising-gas-usage-in-solidity/">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content='http://heyagain.net/images/substrate-connect.png'><meta name="twitter:card" content="summary_large_image">
+<meta property="og:image" content='http://heyagain.net/images/optimizing-gas-usage-solidity.jpg'><meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Optimising gas usage in Solidity | 0xMilica Web3 Blog">
 
 	<link rel="canonical" href="http://heyagain.net/post/optimising-gas-usage-in-solidity/">
@@ -45,7 +45,7 @@ The following examples are based on Branislav&rsquo;s lecture using the Tenderly
 
 	<meta name="twitter:description" content="Lately, it became tricky to find truly efficient solutions for gas optimisation online. What happens is, either they are simply wrong assumptions, or they became obsolete in the meantime, or we need more context to fully understand the proposed solution. But, one thing is for sure - There is always some puzzle missing.
 The following examples are based on Branislav&rsquo;s lecture using the Tenderly gas profiler and simulations which are completely free - make sure to create a profile there and enjoy a tool that gives you incredible insight into gas consumption while supporting a variety of EVM-compatible networks (you can always contact them if there is no network of your preference ATM)">
-<meta name="twitter:image" content="http://heyagain.net/images/substrate-connect.png">
+<meta name="twitter:image" content="http://heyagain.net/images/optimizing-gas-usage-solidity.jpg">
 <meta property="article:published_time" content="2023-02-06T00:00:00&#43;00:00">
 	<meta property="article:updated_time" content="2023-02-06T00:00:00&#43;00:00">
 
@@ -147,7 +147,7 @@ The following examples are based on Branislav&rsquo;s lecture using the Tenderly
         </header>
         
         <div class="article-hero-image" style="overflow: hidden; max-height: 500px;" id="ArticleImage__Hero">
-            <img src="/images/substrate-connect.png">
+            <img src="/images/optimizing-gas-usage-solidity.jpg">
         </div>
         
     </div>
@@ -171,7 +171,7 @@ The following examples are based on Branislav&rsquo;s lecture using the Tenderly
 
     <article  id="articleContent" class="post-content" style="position:relative;">
         <p>Lately, it became tricky to find truly efficient solutions for gas optimisation online. What happens is, either they are simply wrong assumptions, or they became obsolete in the meantime, or we need more context to fully understand the proposed solution. But, one thing is for sure - There is always some puzzle missing.</p>
-<p>The following examples are based on Branislav&rsquo;s lecture using the Tenderly gas profiler and simulations which are completely free - make sure to create a profile there and enjoy a tool that gives you incredible insight into gas consumption while supporting a variety of EVM-compatible networks (you can always contact them if there is no network of your preference ATM)</p>
+<p>The following examples are based on <a href="https://twitter.com/baneofweb3">Branislav</a>&rsquo;s <a href="https://youtu.be/zmItvMeW4dg">lecture</a> using the Tenderly gas profiler and simulations which are completely free - make sure to create a profile there and enjoy a tool that gives you incredible insight into gas consumption while supporting a variety of EVM-compatible networks (you can always contact them if there is no network of your preference ATM)</p>
 <h2 id="transaction---level">Transaction - Level</h2>
 <h3 id="batching-operations">Batching operations</h3>
 <p>Every transaction has an initial gas fee. If they&rsquo;re called consecutively within the smart contract it&rsquo;s possible to batch them, resolve them as internal calls and have a single initial gas fee.</p>
