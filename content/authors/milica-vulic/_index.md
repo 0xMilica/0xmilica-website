@@ -6,6 +6,14 @@ bio: "Blockchain Developer relations engineer with years of hands-on Software De
 avatar: "/images/logo.png"
 social:
 - title: github
+  url: https://x.com/0xMilica
+- title: github
   url: https://github.com/0xMilica
+- title: github
+  url: https://www.linkedin.com/in/0xmilica/
+- title: github
+  url: https://www.youtube.com/@0xMilica
+- title: github
+  url: https://t.me/Milica0x
 ---
 
