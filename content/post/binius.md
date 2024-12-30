@@ -25,7 +25,7 @@ Binary tower fields are finite fields constructed using the powers of 2. In simp
 One of the most significant parts of zero-knowledge proofs involves **commitments** - where a prover ‘commits’ to a value without revealing it, ensuring that the value remains hidden but cannot be changed later. Binius takes this a step further by optimising polynomial commitments for small values, even as small as a single bit. Traditional methods might pad small values to a larger size, causing unnecessary overhead. Binius, however, can commit to these tiny bits directly - **no padding required**. <br /> 
 Think of it like having a standard, one-size box for packaging physical products in a retail company. Even if you’re sending just one small item and the box is nearly empty, you’ll still use a box the same size as a full one, filling it with plenty of padding to ensure your products aren’t tumbled and damaged during transit. Binius offers custom-sized boxes tailored specifically to the items you’re sending. <br /> 
 
-![Binius efficiency without padding!](/images/binius-efficiency-no-padding.png)
+![Binius efficiency without padding!](/images/binius-efficiency-no-padding.png "Padding according to Binius")
 
 This is possible thanks to a clever use of **packing** and **linear codes**, which reduces what we call ‘embedding overhead’. Another way to think about it is packing multiple small items into one box instead of carrying them individually. By doing this, Binius can handle commitments much more efficiently, making it a suitable choice for real world applications where data often comes in smaller, more fragmented pieces.
 
