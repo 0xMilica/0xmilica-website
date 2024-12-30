@@ -9,13 +9,13 @@ authors:
 ---
 
 ## Binius, a New Chapter for ZK
-As blockchain constantly evolves like a living organism, scalability remains one of its biggest hurdles. Cryptographic operations, especially when dealing with **zero-knowledge proofs**, are often the bottleneck. But what if we could accelerate these operations without sacrificing security? Say ‘Hello world!’ to Binius: a groundbreaking **SNARK** system built to solve this problem by using the power of **binary towers** - a recently developed cryptographic structure that’s paving the way for more efficient, scalable systems.
+As blockchain constantly evolves like a living organism, scalability remains one of its biggest hurdles. Cryptographic operations, especially when dealing with **zero-knowledge proofs**, are often the bottleneck. But what if we could accelerate these operations without sacrificing security? Say ‘Hello world!’ to [Binius](https://gitlab.com/IrreducibleOSS/binius) from [Irreducible](https://www.irreducible.com/): a groundbreaking **SNARK** system built to solve this problem by using the power of **binary towers** - a recently developed cryptographic structure that’s paving the way for more efficient, scalable systems.
 ![Speed and security, why not both!](/images/binius-both-speed-security.png)
 ## Binary Towers, a Game-Changer
 Computer systems function within *the field of 2 {0,1}*. Thus, binary systems are a native language for computers. As SNARKs operate on finite fields of prime order, you will find that in most cases that order is of 256 bits. But, can it be done over **the smallest of fields, the binary field**? Binius introduces a new way of handling cryptographic computations through binary towers. <br /> 
 
 You might be familiar with elliptic curves in blockchain protocols like Ethereum. They are incredibly powerful, but they come with some computational overhead, especially when it comes to operations like **multiplication** and **inversion**. <br /> 
-Binary towers, however, allow us to perform these operations **faster** and more **efficiently** in elliptic curve cryptography, as they allow faster computation through the use of binary representation. Existing systems like **Plonky3** and **Halo 2** offer either small proof sizes or fast proving speeds, but not both. <br /> 
+Binary towers, however, allow us to perform these operations **faster** and more **efficiently** in elliptic curve cryptography, as they allow faster computation through the use of binary representation. Existing systems like [**Plonky3**](https://github.com/Plonky3/Plonky3) and [**Halo 2**](https://github.com/zcash/halo2) offer either small proof sizes or fast proving speeds, but not both. <br /> 
 
 ![Fast and efficient, Binius!](/images/binius-fast-efficient.png)
 
@@ -40,7 +40,7 @@ The good news is that there’s potential for even more acceleration. By further
 ![Binius constantly improving!](/images/binius-speed.png)
 
 ## Efficiency
-Binius is not just a theoretical construct; it’s a practical solution that delivers real-world results. In Irreducible’s testing, Binius has demonstrated **2–3 times smaller proof sizes** than existing SNARK systems while providing up to **50% faster proving performance**. These results are based on benchmarking against systems like **Plonky3**. <br /> 
+Binius is not just a theoretical construct; it’s a practical solution that delivers real-world results. In [Irreducible](https://www.irreducible.com/)’s testing, Binius has demonstrated **2–3 times smaller proof sizes** than existing SNARK systems while providing up to **50% faster proving performance**. These results are based on benchmarking against systems like **Plonky3**. <br /> 
 The key to Binius’s efficiency lies in the unique properties of the **binary tower fields**. These fields allow for subquadratic multiplication and efficient inversion, which dramatically reduce the computational cost of operations. Benchmarks show that Binius’ implementation of these fields **outperforms systems like BN254** scalar field operations and **Baby Bear**.
 
 ## Why Binius Matters for Blockchain and Cryptography
