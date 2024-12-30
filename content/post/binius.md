@@ -51,3 +51,6 @@ Ethereum’s scalability challenges are well-known, and **keccak** remains one o
 Binius is an exciting step forward in cryptographic acceleration. By combining cryptographic techniques like **binary tower fields with hardware optimisations** in FPGAs, Binius is positioning itself as a key player in the future of the cryptographic ecosystem. It’s not just about making things faster - it’s about making them **scalable** and **efficient** at every level. <br /> 
 But the impact of Binius stretches beyond Ethereum. Any blockchain or cryptographic system that relies on zero-knowledge proofs - from privacy-preserving protocols to DeFi applications, can benefit from the advancements made possible by Binius. <br /> 
 With its genius **hardware-software co-design**, Binius is, without any doubt, shaping the future of zero-knowledge proofs.
+
+
+Special thanks to Nader Dabit, for recognising my efforts in ZK education and sponsoring this article.
