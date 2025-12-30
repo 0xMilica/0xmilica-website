@@ -8,4 +8,4 @@ authors:
 - Milica Vulic
 ---
 
-In this article, we are going to cover the differences between Zero Knowledge Proof types regarding their size, implementation complexity, speed, curves and learning curve.
+In this article, we are going to cover the differences between most commonly used Zero Knowledge Proof types regarding their size, implementation complexity, speed, curves and learning curve.
