@@ -17,6 +17,9 @@
     <loc>http://0xmilica.com/post/</loc>
     <lastmod>2024-12-19T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://0xmilica.com/post/understanding-zkp-systems-proof-sizes-speed-curves-and-tradeoffs/</loc>
+    <lastmod>2024-12-19T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://0xmilica.com/post/public-key-infrastructure/</loc>
     <lastmod>2023-05-31T00:00:00+00:00</lastmod>
   </url><url>
@@ -37,8 +40,6 @@
   </url><url>
     <loc>http://0xmilica.com/post/creating-light-nodes-using-substrate-connect/</loc>
     <lastmod>2022-12-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://0xmilica.com/post/understanding-zkp-systems-proof-sizes-speed-curves-and-tradeoffs/</loc>
   </url><url>
     <loc>http://0xmilica.com/about/</loc>
   </url>

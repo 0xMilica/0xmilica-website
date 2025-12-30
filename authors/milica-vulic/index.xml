@@ -17,6 +17,15 @@
     </item>
     
     <item>
+      <title>ZKP</title>
+      <link>http://0xmilica.com/post/understanding-zkp-systems-proof-sizes-speed-curves-and-tradeoffs/</link>
+      <pubDate>Thu, 19 Dec 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://0xmilica.com/post/understanding-zkp-systems-proof-sizes-speed-curves-and-tradeoffs/</guid>
+      <description>a New Chapter for ZK As blockchain constantly evolves like a living organism, scalability remains one of its biggest hurdles. Cryptographic operations, especially when dealing with zero-knowledge proofs, are often the bottleneck. But what if we could accelerate these operations without sacrificing security? Say ‘Hello world!’ to Binius from Irreducible: a groundbreaking SNARK system built to solve this problem by using the power of binary towers - a recently developed cryptographic structure that’s paving the way for more efficient, scalable systems.</description>
+    </item>
+    
+    <item>
       <title>Public Key Infrastructure</title>
       <link>http://0xmilica.com/post/public-key-infrastructure/</link>
       <pubDate>Wed, 31 May 2023 00:00:00 +0000</pubDate>
