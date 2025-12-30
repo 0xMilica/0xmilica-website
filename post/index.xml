@@ -91,5 +91,14 @@ Decentralisation in reality MetaMask, behind the scenes, is using Infura infrast
 Stefan made a solid point that the focal point of all the requests* MetaMask handles is in fact based on the East Coast, USA, through the same blockchain node provider.</description>
     </item>
     
+    <item>
+      <title></title>
+      <link>http://0xmilica.com/post/understanding-zkp-systems-proof-sizes-speed-curves-and-tradeoffs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://0xmilica.com/post/understanding-zkp-systems-proof-sizes-speed-curves-and-tradeoffs/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
