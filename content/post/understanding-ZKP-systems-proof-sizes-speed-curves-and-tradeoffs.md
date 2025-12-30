@@ -4,7 +4,7 @@ date: 2025-12-22
 hero: "/images/binius-magic.jpg"
 excerpt: ZKP comparison in size, speed and curves
 timeToRead: 5
-authors:
+authors: 
 - Milica Vulic
 ---
 
