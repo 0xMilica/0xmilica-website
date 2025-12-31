@@ -1,17 +1,17 @@
 ---
 title: Understanding ZKP Systems - Proof Sizes, Speed, Curves and the Trade-offs That Actually Matter
 date: 2025-12-22
-hero: "/images/hero-3.jpg"
+hero: "/images/zkp-systems-groth16-plonk-snark.png"
 excerpt: ZKP comparison in size, speed and curves
 timeToRead: 5
 authors:
 - Milica Vulic
 ---
 
-# Choosing the Right Zero-Knowledge Proof System: The Real Differences That Matter
+## Choosing the Right Zero-Knowledge Proof System: The Real Differences That Matter
 
 Most people talk about ZKPs as if it’s irrelevant which system you choose. It is not - each proof system comes with its own specific tradeoffs: proof sizes, curve choices, budgets, security assumptions and verification costs. If you pick an inadequate one for your case, it might come with a set of burdens you did not count on in the beginning, and it can affect your project in terms of scaling, time budgeting or verification costs.
-In this blogpost, we are going to cover the differences between most commonly used Zero Knowledge Proof types regarding their size, implementation complexity, curves, speed and learning curve.
+In this blogpost, we are going to cover the differences between most commonly used Zero Knowledge Proof types - **Groth16**, **PLONK** and **STARK** - regarding their size, implementation complexity, curves, speed and learning curve.
 
 ## Groth16
 
@@ -19,7 +19,7 @@ Figure: Groth16 zkSNARK setup and workflow - showing trusted setup, prover, and 
 Source: “Under the hood of zkSNARK Groth16 protocol (part 1)” by Taras Shchybovyk on Medium (Coinmonks)
 
 ### What it is
-A pairing-based SNARK - Succinct Non-Interactive Argument of Knowledge with a per-circuit trusted setup. Long time on the ZK scene and still the smallest proof and fastest verification in practice.
+A pairing-based **SNARK** - **S**uccinct **N**on-**I**nteractive **A**rgument of **K**nowledge with a per-circuit trusted setup. Long time on the ZK scene and still the smallest proof and fastest verification in practice.
 
 ### Curve Types
 - BN254: cheap verification, lower security
@@ -57,7 +57,7 @@ Source: “PLONK Round 1 / PLONK Revisited” on the Maya ZK blog. (https://www.
 
 
 ### What it is
-PLONK - Permutations over Lagrange-bases for Oecumenical Non-interactive arguments of Knowledge is still a zk-SNARK - just a more modern variant that trades Groth16’s tiny proofs and fast verification for a universal-setup, more modern polynomial commitments and good recursion support.
+**PLONK** - **P**ermutations over **L**agrange-bases for **O**ecumenical **N**on-interactive arguments of **K**nowledge is still a zk-SNARK - just a more modern variant that trades Groth16’s tiny proofs and fast verification for a universal-setup, more modern polynomial commitments and good recursion support.
 
 ### Curve Types
 - BN254
@@ -126,9 +126,20 @@ For STARK-based systems, developers usually build using Risc0 or SP1 in a zkVM p
 ## So, How to Make a Choice?
 You choose a ZKP system based on the constraints you cannot escape:
 
-- If the proof must be tiny and verification costs small: Groth16
-- If the circuit will scale, needs recursion and universal trusted setup: PLONK
-- If you plan for a big circuit and you don’t want trusted setup: STARKs
+- If the proof must be tiny and verification costs small: **Groth16**
+- If the circuit will scale, needs recursion and universal trusted setup: **PLONK**
+- If you plan for a big circuit and you don’t want trusted setup: **STARKs**
+
+### Comparison of ZKP Systems
+
+| **Criteria**            | **Groth16**                     | **PLONK**                                      | **STARKs**                          |
+|-----------------------|---------------------------------|------------------------------------------------|-------------------------------------|
+| **Setup**             | Trusted per circuit             | Universal (trusted)                            | None (transparent)                  |
+| **Proving Time**      | Slow                            | Medium                                         | Fast (for large circuits)           |
+| **Verification Time** | Fastest                         | Medium                                         | Slow                                |
+| **Proof Size**        | ~200 bytes                      | One to tens of KBs                             | Tens to hundreds of KBs             |
+| **Recursion**         | Weak                            | Strong                                         | Strong                              |
+| **Curve Choices**     | BN254, BLS12-381                | BN254, BLS12-381, Pasta, Goldilocks            | None (hash-based)                   |
 
 The thing developers forget:
-Your bottleneck is rarely the proof system itself. It is how the system scales that introduces the biggest obstacles. There is no perfect choice. Choosing a proof system also means choosing its ecosystem - the languages, frameworks, and performance behaviour that come with it. Choose based on your latency budget, cost constraints, verification platform and the tech stack you plan to rely on.
+your bottleneck is rarely the proof system itself. It is how the system scales that introduces the biggest obstacles. There is no perfect choice. Choosing a proof system also means choosing its ecosystem - the languages, frameworks, and performance behaviour that come with it. Choose based on your latency budget, cost constraints, verification platform and the tech stack you plan to rely on.
