@@ -32,7 +32,7 @@
 <meta property="og:url" content="http://0xmilica.com/post/understanding-zkp-systems-proof-sizes-speed-curves-and-tradeoffs/">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content='http://0xmilica.com/images/hero-3.jpg'><meta name="twitter:card" content="summary_large_image">
+<meta property="og:image" content='http://0xmilica.com/images/zkp-systems-groth16-plonk-snark.png'><meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Understanding ZKP Systems - Proof Sizes, Speed, Curves and the Trade-offs That Actually Matter | 0xMilica Web3 Blog">
 
 	<link rel="canonical" href="http://0xmilica.com/post/understanding-zkp-systems-proof-sizes-speed-curves-and-tradeoffs/">
@@ -42,7 +42,7 @@
 	<meta name="twitter:creator" content="@https://x.com/0xMilica">
 
 	<meta name="twitter:description" content="Choosing the Right Zero-Knowledge Proof System: The Real Differences That Matter Most people talk about ZKPs as if it’s irrelevant which system you choose. It is not - each proof system comes with its own specific tradeoffs: proof sizes, curve choices, budgets, security assumptions and verification costs. If you pick an inadequate one for your case, it might come with a set of burdens you did not count on in the beginning, and it can affect your project in terms of scaling, time budgeting or verification costs.">
-<meta name="twitter:image" content="http://0xmilica.com/images/hero-3.jpg">
+<meta name="twitter:image" content="http://0xmilica.com/images/zkp-systems-groth16-plonk-snark.png">
 <meta property="article:published_time" content="2025-12-22T00:00:00&#43;00:00">
 	<meta property="article:updated_time" content="2025-12-22T00:00:00&#43;00:00">
 
@@ -145,7 +145,7 @@
         </header>
         
         <div class="article-hero-image" style="overflow: hidden; max-height: 500px;" id="ArticleImage__Hero">
-            <img src="/images/hero-3.jpg">
+            <img src="/images/zkp-systems-groth16-plonk-snark.png">
         </div>
         
     </div>
@@ -168,14 +168,14 @@
 
 
     <article  id="articleContent" class="post-content" style="position:relative;">
-        <h1 id="choosing-the-right-zero-knowledge-proof-system-the-real-differences-that-matter">Choosing the Right Zero-Knowledge Proof System: The Real Differences That Matter</h1>
+        <h2 id="choosing-the-right-zero-knowledge-proof-system-the-real-differences-that-matter">Choosing the Right Zero-Knowledge Proof System: The Real Differences That Matter</h2>
 <p>Most people talk about ZKPs as if it’s irrelevant which system you choose. It is not - each proof system comes with its own specific tradeoffs: proof sizes, curve choices, budgets, security assumptions and verification costs. If you pick an inadequate one for your case, it might come with a set of burdens you did not count on in the beginning, and it can affect your project in terms of scaling, time budgeting or verification costs.
-In this blogpost, we are going to cover the differences between most commonly used Zero Knowledge Proof types regarding their size, implementation complexity, curves, speed and learning curve.</p>
+In this blogpost, we are going to cover the differences between most commonly used Zero Knowledge Proof types - <strong>Groth16</strong>, <strong>PLONK</strong> and <strong>STARK</strong> - regarding their size, implementation complexity, curves, speed and learning curve.</p>
 <h2 id="groth16">Groth16</h2>
 <p>Figure: Groth16 zkSNARK setup and workflow - showing trusted setup, prover, and verifier interaction.
 Source: “Under the hood of zkSNARK Groth16 protocol (part 1)” by Taras Shchybovyk on Medium (Coinmonks)</p>
 <h3 id="what-it-is">What it is</h3>
-<p>A pairing-based SNARK - Succinct Non-Interactive Argument of Knowledge with a per-circuit trusted setup. Long time on the ZK scene and still the smallest proof and fastest verification in practice.</p>
+<p>A pairing-based <strong>SNARK</strong> - <strong>S</strong>uccinct <strong>N</strong>on-<strong>I</strong>nteractive <strong>A</strong>rgument of <strong>K</strong>nowledge with a per-circuit trusted setup. Long time on the ZK scene and still the smallest proof and fastest verification in practice.</p>
 <h3 id="curve-types">Curve Types</h3>
 <ul>
 <li>BN254: cheap verification, lower security</li>
@@ -206,7 +206,7 @@ Source: “Under the hood of zkSNARK Groth16 protocol (part 1)” by Taras Shchy
 <p>Figure: PLONK proof workflow - illustrating polynomial construction, commitments, openings, and verifier checks in a universal-setup SNARK.
 Source: “PLONK Round 1 / PLONK Revisited” on the Maya ZK blog. (<a href="https://www.maya-zk.com/plonk-round1/plonk-revisited">https://www.maya-zk.com/plonk-round1/plonk-revisited</a>)</p>
 <h3 id="what-it-is-1">What it is</h3>
-<p>PLONK - Permutations over Lagrange-bases for Oecumenical Non-interactive arguments of Knowledge is still a zk-SNARK - just a more modern variant that trades Groth16’s tiny proofs and fast verification for a universal-setup, more modern polynomial commitments and good recursion support.</p>
+<p><strong>PLONK</strong> - <strong>P</strong>ermutations over <strong>L</strong>agrange-bases for <strong>O</strong>ecumenical <strong>N</strong>on-interactive arguments of <strong>K</strong>nowledge is still a zk-SNARK - just a more modern variant that trades Groth16’s tiny proofs and fast verification for a universal-setup, more modern polynomial commitments and good recursion support.</p>
 <h3 id="curve-types-1">Curve Types</h3>
 <ul>
 <li>BN254</li>
@@ -266,12 +266,61 @@ Verification is hash-intensive thus costly on EVM, which makes on-chain verifica
 <h2 id="so-how-to-make-a-choice">So, How to Make a Choice?</h2>
 <p>You choose a ZKP system based on the constraints you cannot escape:</p>
 <ul>
-<li>If the proof must be tiny and verification costs small: Groth16</li>
-<li>If the circuit will scale, needs recursion and universal trusted setup: PLONK</li>
-<li>If you plan for a big circuit and you don’t want trusted setup: STARKs</li>
+<li>If the proof must be tiny and verification costs small: <strong>Groth16</strong></li>
+<li>If the circuit will scale, needs recursion and universal trusted setup: <strong>PLONK</strong></li>
+<li>If you plan for a big circuit and you don’t want trusted setup: <strong>STARKs</strong></li>
 </ul>
+<h3 id="comparison-of-zkp-systems">Comparison of ZKP Systems</h3>
+<table>
+<thead>
+<tr>
+<th><strong>Criteria</strong></th>
+<th><strong>Groth16</strong></th>
+<th><strong>PLONK</strong></th>
+<th><strong>STARKs</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Setup</strong></td>
+<td>Trusted per circuit</td>
+<td>Universal (trusted)</td>
+<td>None (transparent)</td>
+</tr>
+<tr>
+<td><strong>Proving Time</strong></td>
+<td>Slow</td>
+<td>Medium</td>
+<td>Fast (for large circuits)</td>
+</tr>
+<tr>
+<td><strong>Verification Time</strong></td>
+<td>Fastest</td>
+<td>Medium</td>
+<td>Slow</td>
+</tr>
+<tr>
+<td><strong>Proof Size</strong></td>
+<td>~200 bytes</td>
+<td>One to tens of KBs</td>
+<td>Tens to hundreds of KBs</td>
+</tr>
+<tr>
+<td><strong>Recursion</strong></td>
+<td>Weak</td>
+<td>Strong</td>
+<td>Strong</td>
+</tr>
+<tr>
+<td><strong>Curve Choices</strong></td>
+<td>BN254, BLS12-381</td>
+<td>BN254, BLS12-381, Pasta, Goldilocks</td>
+<td>None (hash-based)</td>
+</tr>
+</tbody>
+</table>
 <p>The thing developers forget:
-Your bottleneck is rarely the proof system itself. It is how the system scales that introduces the biggest obstacles. There is no perfect choice. Choosing a proof system also means choosing its ecosystem - the languages, frameworks, and performance behaviour that come with it. Choose based on your latency budget, cost constraints, verification platform and the tech stack you plan to rely on.</p>
+your bottleneck is rarely the proof system itself. It is how the system scales that introduces the biggest obstacles. There is no perfect choice. Choosing a proof system also means choosing its ecosystem - the languages, frameworks, and performance behaviour that come with it. Choose based on your latency budget, cost constraints, verification platform and the tech stack you plan to rely on.</p>
 
     </article>
 
