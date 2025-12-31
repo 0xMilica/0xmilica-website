@@ -1,5 +1,5 @@
 ---
-title: Understanding ZKP Systems ":" Proof Sizes, Speeds, Curves, and the Trade-offs That Actually Matter
+title: Understanding ZKP Systems - Proof Sizes, Speed, Curves and the Trade-offs That Actually Matter
 date: 2025-12-22
 hero: "/images/hero-3.jpg"
 excerpt: ZKP comparison in size, speed and curves
