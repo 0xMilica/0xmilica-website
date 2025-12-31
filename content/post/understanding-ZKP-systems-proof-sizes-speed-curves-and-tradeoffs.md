@@ -1,6 +1,6 @@
 ---
 title: Understanding ZKP Systems - Proof Sizes, Speed, Curves and the Trade-offs That Actually Matter
-date: 2025-12-22
+date: 2025-12-31
 hero: "/images/zkp-systems-groth16-plonk-snark.png"
 excerpt: ZKP comparison in size, speed and curves
 timeToRead: 5
@@ -14,9 +14,6 @@ Most people talk about ZKPs as if it’s irrelevant which system you choose. It 
 In this blogpost, we are going to cover the differences between most commonly used Zero Knowledge Proof types - **Groth16**, **PLONK** and **STARK** - regarding their size, implementation complexity, curves, speed and learning curve.
 
 ## Groth16
-
-Figure: Groth16 zkSNARK setup and workflow - showing trusted setup, prover, and verifier interaction.
-Source: “Under the hood of zkSNARK Groth16 protocol (part 1)” by Taras Shchybovyk on Medium (Coinmonks)
 
 ### What it is
 A pairing-based **SNARK** - **S**uccinct **N**on-**I**nteractive **A**rgument of **K**nowledge with a per-circuit trusted setup. Long time on the ZK scene and still the smallest proof and fastest verification in practice.
@@ -51,10 +48,6 @@ For Groth16, developers typically work with tools such as Circom and snarkJS or 
 
 
 ## PLONK and PLONK-ish Systems (TurboPLONK, UltraPLONK, Plonky2)
-
-Figure: PLONK proof workflow - illustrating polynomial construction, commitments, openings, and verifier checks in a universal-setup SNARK.
-Source: “PLONK Round 1 / PLONK Revisited” on the Maya ZK blog. (https://www.maya-zk.com/plonk-round1/plonk-revisited)
-
 
 ### What it is
 **PLONK** - **P**ermutations over **L**agrange-bases for **O**ecumenical **N**on-interactive arguments of **K**nowledge is still a zk-SNARK - just a more modern variant that trades Groth16’s tiny proofs and fast verification for a universal-setup, more modern polynomial commitments and good recursion support.
