@@ -47,7 +47,7 @@ For Groth16, developers typically work with tools such as Circom and snarkJS or 
  - Heavy proving for large circuits
 
 
-## PLONK and PLONK-ish Systems (TurboPLONK, UltraPLONK, Plonky2)
+## PLONK and PLONK-ish Systems (TurboPLONK, UltraPLONK, UltraHONK, Plonky2)
 
 ### What it is
 **PLONK** - **P**ermutations over **L**agrange-bases for **O**ecumenical **N**on-interactive arguments of **K**nowledge is still a zk-SNARK - just a more modern variant that trades Groth16’s tiny proofs and fast verification for a universal-setup, more modern polynomial commitments and good recursion support.
